@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5d75179-875a-4d20-8054-20a3a5ced4da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/audioplayer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/audioplayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/audioplayer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +16,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
+            <state relative-caret-position="9438">
               <caret line="363" column="7" selection-start-line="363" selection-start-column="7" selection-end-line="363" selection-end-column="7" />
             </state>
           </provider>
@@ -24,8 +25,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/audioplayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="273" lean-forward="true" selection-start-line="273" selection-end-line="273" />
+            <state>
+              <caret selection-end-line="205" selection-end-column="1" />
+              <folding>
+                <element signature="n#!!block;n#updateVolumeValue#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -36,8 +40,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -46,6 +50,8 @@
       <find>timeBar</find>
       <find>timeBarSize</find>
       <find>progr</find>
+      <find>update</find>
+      <find>embed</find>
     </findStrings>
     <replaceStrings>
       <replace>timeControlBarSize</replace>
@@ -70,6 +76,9 @@
     <option name="files">
       <list>
         <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/reverbera.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
       </list>
     </option>
   </component>
@@ -85,6 +94,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -94,18 +104,12 @@
             </path>
             <path>
               <item name="reverbera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reverbera" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reverbera" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -154,12 +158,13 @@
       <workItem from="1569603390837" duration="663000" />
       <workItem from="1569621887059" duration="1286000" />
       <workItem from="1569633561210" duration="1138000" />
-      <workItem from="1569721285766" duration="853000" />
+      <workItem from="1569721285766" duration="1708000" />
+      <workItem from="1569796288082" duration="10656000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14754000" />
+    <option name="totallyTimeSpent" value="26265000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -174,7 +179,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13337801" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.1347185" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -232,15 +237,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
+        <state relative-caret-position="9438">
           <caret line="363" column="7" selection-start-line="363" selection-start-column="7" selection-end-line="363" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/audioplayer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="273" lean-forward="true" selection-start-line="273" selection-end-line="273" />
+        <state>
+          <caret selection-end-line="205" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!block;n#updateVolumeValue#0" />
+          </folding>
         </state>
       </provider>
     </entry>
