@@ -190,6 +190,65 @@ function clickedTimeBar(event, audioBook, timeControlBar, progressBar, timeContr
         progressBar.style.width = mouseX + 'px';
     }
 }
+//other embed
+function keyDownTimeBar(key, audioBook) {
+    let flag = false;
+    let newTime;
+
+    if (!audioBook.ended) {
+        switch (key.keyCode) {
+            //right arrow and up arrow
+            case 39:
+            case 38:
+                //increases 5s of current time
+                newTime = audioBook.currentTime + 5;
+                flag = true;
+                break;
+
+            //left arrow and down arrow
+            case 37:
+            case 40:
+                newTime = audioBook.currentTime - 5;
+                flag = true;
+                break;
+
+            //home key
+            case 36:
+                newTime = 0;
+                flag = true;
+                break;
+
+            //end key
+            case 35:
+                newTime = audioBook.duration;
+                flag = true;
+                break;
+
+            default:
+                return;
+        }
+
+        //prevents default behavior of the keys, like scroll up when pressed
+        if (flag) {
+            key.preventDefault();
+            key.stopPropagation();
+        }
+        newTime = updateTimeValue(audioBook, newTime);
+    }
+}
+
+function updateTimeValue(audioBook, newTime) {
+    if (newTime < 0) {
+        newTime = 0;
+    } else if (newTime > audioBook.duration) {
+        newTime = audioBook.duration;
+    }
+
+    audioBook.currentTime = newTime;
+
+    return newTime;
+
+}
 
 function clickedVolumeBar(event, audioBook, muteButton, volumeControlBar, volumeController, volumeControlBarSize) {
     if (!audioBook.ended) {
@@ -200,12 +259,13 @@ function clickedVolumeBar(event, audioBook, muteButton, volumeControlBar, volume
         let newVolume = mouseX / volumeControlBarSize;
 
         newVolume = updateVolumeValue(audioBook, muteButton, newVolume);
+        updateVolumeAria(volumeControlBar, newVolume);
         volumeController.style.width = mouseX + 'px';
 
     }
 }
 
-//other embed
+
 
 function keyDownVolumeBar(key, audioBook, muteButton, volumeControlBar, volumeController, volumeControlBarSize) {
     let flag = false;
@@ -268,9 +328,11 @@ function updateVolumeValue(audioBook, muteButton, newVolume) {
     if (audioBook.volume == 0) {
         audioBook.muted = true;
         muteButton.innerHTML = "";
+
     } else {
         audioBook.muted = false;
         muteButton.innerHTML = "";
+
     }
 
 
@@ -285,66 +347,10 @@ function updateVolumeAria(volumeControlBar, volume) {
 
     volumeControlBar.setAttribute('aria-valuenow', volumeValue);
     volumeControlBar.setAttribute('aria-valuetext', volumeText);
-}
-
-function keyDownTimeBar(key, audioBook) {
-    let flag = false;
-    let newTime;
-
-    if (!audioBook.ended) {
-        switch (key.keyCode) {
-            //right arrow and up arrow
-            case 39:
-            case 38:
-                //increases 5s of current time
-                newTime = audioBook.currentTime + 5;
-                flag = true;
-                break;
-
-            //left arrow and down arrow
-            case 37:
-            case 40:
-                newTime = audioBook.currentTime - 5;
-                flag = true;
-                break;
-
-            //home key
-            case 36:
-                newTime = 0;
-                flag = true;
-                break;
-
-            //end key
-            case 35:
-                newTime = audioBook.duration;
-                flag = true;
-                break;
-
-            default:
-                return;
-        }
-
-        //prevents default behavior of the keys, like scroll up when pressed
-        if (flag) {
-            key.preventDefault();
-            key.stopPropagation();
-        }
-        newTime = updateTimeValue(audioBook, newTime);
-    }
-}
-
-function updateTimeValue(audioBook, newTime) {
-    if (newTime < 0) {
-        newTime = 0;
-    } else if (newTime > audioBook.duration) {
-        newTime = audioBook.duration;
-    }
-
-    audioBook.currentTime = newTime;
-
-    return newTime;
 
 }
+
+
 
 
 //adds a zero when the time is smaller than ten seconds
