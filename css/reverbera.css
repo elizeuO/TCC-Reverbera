@@ -1,3 +1,33 @@
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+  background: #e5e5e5;
+  font-family: sans-serif !important;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: underline;
+}
+
+a[href^="tel:"], a[href^="mailto:"] {
+  color: inherit;
+  text-decoration: none;
+}
+
+a[href^="tel:"] {
+  pointer-events: none;
+}
+
 h2 {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -6,12 +36,8 @@ h2 {
   font-weight: 700;
 }
 
-a {
-  text-decoration: underline;
-}
-
 ol {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .c-header {
@@ -33,6 +59,14 @@ ol {
   flex: 1;
 }
 
+.c__white-text {
+  color: white !important;
+}
+
+.c__center {
+  text-align: center !important;
+}
+
 .c-container.c__center {
   text-align: center;
 }
@@ -42,8 +76,8 @@ ol {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 0px;
-  padding-left: 0px;
+  margin-bottom: 0;
+  padding-left: 0;
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
@@ -161,7 +195,7 @@ ol {
 }
 
 .c__link.c__trasition300.c__link-full-size {
-  margin-right: 0px;
+  margin-right: 0;
   padding-top: 3px;
   padding-bottom: 3px;
 }
@@ -193,14 +227,14 @@ ol {
   padding-bottom: 120px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 29, 0.28)), to(rgba(0, 0, 29, 0.28))), url('../images/main-section-bg.jpg');
   background-image: linear-gradient(180deg, rgba(0, 0, 29, 0.28), rgba(0, 0, 29, 0.28)), url('../images/main-section-bg.jpg');
-  background-position: 0px 0px, 100% 50%;
+  background-position: 0 0, 100% 50%;
   background-size: auto, auto 600px;
   background-repeat: repeat, no-repeat;
   background-attachment: scroll, fixed;
 }
 
 .c__title {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 30px;
   color: #007dc9;
   line-height: 1.2em;
@@ -231,9 +265,9 @@ ol {
 }
 
 .c-category-menu__link {
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
 }
 
 .c-category-menu__link.c__trasition300 {
@@ -243,13 +277,13 @@ ol {
 .c-gategory-menu__list {
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .c-category-menu__title {
   width: 100%;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 10px 24px;
   background-color: #007dc9;
   font-size: 1.3em;
@@ -285,7 +319,7 @@ ol {
 }
 
 .c__paragraph.c-paragraph--no-margin {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .c__paragraph.c-paragraph--info {
@@ -401,7 +435,7 @@ ol {
 }
 
 .c-audio-player__button.c-audio-player__button--blue-color-no-border {
-  margin-right: 0px;
+  margin-right: 0;
   border-style: none;
   color: #007dc9;
   font-size: 1.1em;
@@ -440,7 +474,7 @@ ol {
 
 .c-audio__control-bar.c-audio__control-bar--smaller-no-margin {
   width: 25%;
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .c-audio__time-bar {
@@ -455,10 +489,10 @@ ol {
 
 .c-audio__controller {
   position: absolute;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   background-color: #007dc9;
 }
@@ -468,7 +502,7 @@ ol {
 }
 
 .c-audio__controller.js-timecontroller.c-audio__controller--no-size {
-  width: 0px;
+  width: 0;
 }
 
 .c--footer {
@@ -478,7 +512,7 @@ ol {
 }
 
 .c__accessible-text {
-  font-size: 0px;
+  font-size: 0;
 }
 
 .nav-menu {
@@ -546,10 +580,16 @@ ol {
   border-left: 1px solid #00001d;
 }
 
+
+
 .c-list {
   width: 50%;
   margin: 20px auto;
-  padding-left: 0px;
+  padding-left: 0;
+}
+
+.c-list__item:first-child {
+  border-top: #00001d 1px solid;
 }
 
 .c-list.c-list--more-margin {
@@ -638,7 +678,7 @@ ol {
     background-color: #fff;
   }
   .c-content-wrapper {
-    margin-left: 0px;
+    margin-left: 0;
   }
   .l__col-4 {
     width: 50%;
@@ -654,8 +694,8 @@ ol {
     padding-left: 10px;
   }
   .c-audio-player.c-audio-player--left-align {
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-right: 0;
+    margin-left: 0;
   }
   .c-audio__control-bar.c-audio__control-bar--smaller-no-margin.js-volumecontrolbar {
     display: none;
