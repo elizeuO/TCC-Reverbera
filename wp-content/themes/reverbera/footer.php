@@ -6,10 +6,10 @@
         </span>
     </a>
 </footer>
-<script src="js/audioplayer.js" type="text/javascript"></script>
-<script src="js/fontSize.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/audioplayer.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/fontSize.js" type="text/javascript"></script>
 <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript"></script>
-<script src="js/scripts.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/scripts.js" type="text/javascript"></script>
 <?php wp_footer(); ?>
 </body>
 </html>

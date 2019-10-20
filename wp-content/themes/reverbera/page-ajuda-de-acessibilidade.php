@@ -1,4 +1,4 @@
-<?php include('partials/header.php') ?>
+<?php get_header(); ?>
 
     <section class="c-section c-section--main-section">
         <div class="c-container c__center">
@@ -30,7 +30,7 @@
                                 </li>
 
                                 <li class="c-breadcrumb__link">
-                                    <a href="ajuda-de-acessiblidade.php" aria-current="page"
+                                    <a href="page-ajuda-de-acessibilidade.php" aria-current="page"
                                        class="c__link c__trasition300 w--current">
                                         Ajuda de Acessibilidade
                                     </a>
@@ -191,4 +191,4 @@
             </div>
         </div>
     </section>
-<?php include('partials/footer.php') ?>
+<?php get_footer(); ?>

@@ -60,4 +60,4 @@
             </div>
         </div>
     </section>
-<?php include('partials/footer.php') ?>
+<?php get_footer(); ?>
