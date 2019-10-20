@@ -1,4 +1,5 @@
-<?php include('partials/header.php') ?>
+
+<?php get_header(); ?>
 
     <section aria-labeledby="mainTitle" class="c-section c-section--main-section">
         <div class="c-container c__center">

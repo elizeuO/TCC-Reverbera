@@ -23,6 +23,6 @@
                 </div>
             </div>
         </a>
-        <?php include ('audioplayer.php')?>
+        <?php include('audioplayer.php') ?>
     </article>
 </li>

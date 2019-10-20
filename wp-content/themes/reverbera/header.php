@@ -2,11 +2,16 @@
 <html data-wf-page="5d7e40af17c02c404ddccfbb" data-wf-site="5d7e40af17c02c53c2dccfba">
 <head>
     <meta charset="utf-8">
-    <title>Reverbera, audiolivros gratuitos</title>
+    <title><?php wp_title(); ?></title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/reverbera.css" rel="stylesheet" type="text/css">
+    <link href="<?= get_stylesheet_directory_uri() . '../css/normalize.css'; ?>" rel="stylesheet"/>
+    <link href="<?= get_stylesheet_directory_uri() . '../css/style.css'; ?>" rel="stylesheet"/>
+    <link href="<?= get_stylesheet_directory_uri() . '../css/reverbera.css'; ?>" rel="stylesheet"/>
+
+
+    <!--    <link href="css/normalize.css" rel="stylesheet" type="text/css">-->
+    <!--    <link href="css/style.css" rel="stylesheet" type="text/css">-->
+    <!--    <link href="css/reverbera.css" rel="stylesheet" type="text/css">-->
 
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -15,7 +20,7 @@
     <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-
+    <?php wp_head(); ?>
 </head>
 <body class="body">
 <header id="menu" tabindex="0" accesskey="2" class="c-header">

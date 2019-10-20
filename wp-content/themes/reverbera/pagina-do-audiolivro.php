@@ -103,7 +103,7 @@
                                 2MB
                             </p>
                             <div class="l__col-6">
-                                <?php include ('partials/audioplayer.php')?>
+                                <?php include('partials/audioplayer.php') ?>
                             </div>
                         </div>
                     </div>
