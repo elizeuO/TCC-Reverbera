@@ -31,14 +31,7 @@ class App {
 		HelperProvider::removeDefaultPostType();
 		HelperProvider::removeDefaultImageSizes();
 		AssetController::registerAssets();
-		FormController::registerAssets( [ 'contato', 'trabalhe-conosco' ] );
 
-		( new FormBuilder( new BootstrapProvider() ) )->register();
-		( new SliderBuilder( new BootstrapProvider() ) )->register();
-		( new PropertyBuilder( new BootstrapProvider() ) )->register();
 		( new BlogBuilder() )->register();
-		( new TestimonialBuilder( new BootstrapProvider() ) )->register();
-		( new ClientBuilder( new BootstrapProvider() ) )->register();
-		( new ProductBuilder( new BootstrapProvider() ) )->register();
 	}
 }

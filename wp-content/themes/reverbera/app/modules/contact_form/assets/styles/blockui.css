@@ -1,7 +1,0 @@
-.blockOverlay {
-    background: url(../images/loader.svg) no-repeat center center;
-    background-color: rgba(9, 9, 9, 0.2);
-    border: none;
-    position: absolute;
-    z-index: 9999999 !important;
-}

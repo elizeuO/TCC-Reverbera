@@ -2,14 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5d75179-875a-4d20-8054-20a3a5ced4da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/reverbera.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/reverbera/js/jquery-3.4.1.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/reverbera/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/reverbera/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/models/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/reverbera/app/models/App.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/client/Client.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/client/ClientBuilder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/client/ClientController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/client/partials/link.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/product/Product.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/product/ProductBuilder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/product/ProductPublicController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/product/migration/201901031701-create-products-view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/product/partials/information.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/property/Property.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/property/PropertyBuilder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/property/PropertyController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/property/assets/scripts/Autocomplete.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/property/assets/styles/property.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/property/partials/features.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/property/partials/info.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/property/partials/type.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/service/Service.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/service/ServiceBuilder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/service/ServiceController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/slider/Slide.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/slider/SliderBuilder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/slider/SliderController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/slider/assets/scripts/slick/slick.appscripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/slider/assets/scripts/slick/slick.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/slider/assets/styles/slick/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/slider/assets/styles/slick/fonts/slick.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/slider/assets/styles/slick/slick-custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/slider/assets/styles/slick/slick-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/slider/assets/styles/slick/slick.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/slider/partials/fields.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/slider/partials/filter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/testimonial/Testimonial.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/testimonial/TestimonialBuilder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/testimonial/TestimonialController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/testimonial/assets/images/play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/testimonial/assets/scripts/admin/Attachment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/testimonial/assets/scripts/public/VideoManager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/testimonial/assets/styles/admin/attachment.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/testimonial/assets/styles/public/video-manager.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/testimonial/partials/description.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/testimonial/partials/type.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/testimonial/partials/url.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,54 +57,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/reverbera/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-78" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/reverbera/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/reverbera/vendor/autoload.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/reverbera/app/controllers/AssetController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/service/ServiceBuilder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1275">
-              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/reverbera/app/models/App.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/reverbera/header.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="182">
@@ -77,10 +66,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/reverbera/app/models/Contact.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-598">
+              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/reverbera/app/models/App.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/reverbera/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" column="57" lean-forward="true" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="65" />
+            <state relative-caret-position="208">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -154,10 +161,10 @@
         <option value="$PROJECT_DIR$/wp-content/themes/reverbera/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/reverbera/composer.json" />
         <option value="$PROJECT_DIR$/wp-content/themes/reverbera/js/jquery-3.4.1.min.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/reverbera/app/controllers/AssetController.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/reverbera/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/reverbera/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/reverbera/app/models/App.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/reverbera/app/controllers/AssetController.php" />
       </list>
     </option>
   </component>
@@ -240,32 +247,7 @@
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="reverbera" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reverbera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reverbera" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="reverbera" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reverbera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reverbera" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="reverbera" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reverbera" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reverbera" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="reverbera" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reverbera" type="b2602c69:ProjectViewProjectNode" />
@@ -290,11 +272,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\reverbera" />
       <recent name="C:\xampp\htdocs\reverbera\wp-content\themes\reverbera" />
       <recent name="C:\xampp\htdocs\reverbera\wp-content\themes" />
       <recent name="C:\xampp\htdocs\reverbera\images" />
       <recent name="C:\Users\elize\Documents\Faculdade IFG\TCC\Site\reverbera\js" />
-      <recent name="C:\Users\elize\Documents\Faculdade IFG\TCC\Site\reverbera\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\reverbera\wp-content\themes\reverbera\partials" />
@@ -338,12 +320,12 @@
       <workItem from="1570671342510" duration="4505000" />
       <workItem from="1570746903462" duration="521000" />
       <workItem from="1571578448118" duration="8553000" />
-      <workItem from="1571601949539" duration="6625000" />
+      <workItem from="1571601949539" duration="7384000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59976000" />
+    <option name="totallyTimeSpent" value="60735000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -356,7 +338,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1508043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -404,10 +385,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/debug.log" />
-    <entry file="file://$PROJECT_DIR$/pagina-do-audiolivro.php" />
-    <entry file="file://$PROJECT_DIR$/pagina-do-autor.php" />
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/wp-config-sample.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -610,31 +587,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/reverbera/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="57" lean-forward="true" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/service/ServiceBuilder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1275">
           <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/reverbera/app/models/App.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/reverbera/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -650,6 +606,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/reverbera/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa15288.28055/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/reverbera/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/reverbera/app/modules/slider/Slide.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/reverbera/app/models/Contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-598">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/reverbera/app/models/App.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
