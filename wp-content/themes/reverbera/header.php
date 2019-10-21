@@ -5,10 +5,6 @@
     <meta charset="utf-8">
     <title><?= wp_title(); ?></title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="<?= get_stylesheet_directory_uri() . '../css/normalize.css'; ?>" rel="stylesheet"/>
-    <link href="<?= get_stylesheet_directory_uri() . '../css/style.css'; ?>" rel="stylesheet"/>
-    <link href="<?= get_stylesheet_directory_uri() . '../css/reverbera.css'; ?>" rel="stylesheet"/>
-
     <link rel="apple-touch-icon" sizes="180x180"
           href="<?= get_template_directory_uri(); ?>/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32"

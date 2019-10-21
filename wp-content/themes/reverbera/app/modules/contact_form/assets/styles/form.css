@@ -1,0 +1,63 @@
+.c__section-form {
+    padding: 40px;
+    margin-left: -20px;
+}
+
+.c__container-form {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.c__container--submit {
+    margin-top: 15px;
+}
+
+.l-flex {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+
+}
+
+.l-flex.l-flex--wrap {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.l-flex.l-flex--start {
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.c__item-form {
+    margin-bottom: 10px;
+}
+
+.c__box-title{
+    margin-bottom: 30px;
+}
+
+.c__title {
+    font-size: 25px;
+}
+
+h2.c__title {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+h4.c__title {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
