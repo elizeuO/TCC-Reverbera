@@ -23,11 +23,10 @@
                  id="volumeControlBar" tabindex="0">
                 <div class="c-audio__controller js-volumecontroller"></div>
             </div>
-            <button href="#" title="Fazer download do audiolivro" aria-label="Fazer download do audiolivro"
-                    target="_blank"
-                    class="c-audio-player__button c-audio-player__button--blue-color-no-border c__trasition300 w-button">
+            <a href="<?= get_template_directory_uri()?>/audios/contosdonorte.mp3" title="Fazer download do audiolivro" aria-label="Fazer download do audiolivro"
+                    target="_blank" class="c-audio-player__button c-audio-player__button--blue-color-no-border c__trasition300 w-button" download>
                 <span aria-hidden="true"></span>
-            </button>
+            </a>
         </div>
         <div class="c-audio__time-bar">
             <div class="l-flex l-flex--center">
