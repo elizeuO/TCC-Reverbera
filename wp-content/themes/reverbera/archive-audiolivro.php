@@ -26,7 +26,7 @@
                                 </li>
 
                                 <li class="c-breadcrumb__link">
-                                    <a href="categoria-de-audiolivros.php" aria-current="page"
+                                    <a href="archive-audiolivro.php" aria-current="page"
                                        class="c__link c__trasition300 w--current">
                                         Categoria: Aventura
                                     </a>

@@ -76,7 +76,7 @@ function addCustomPostTypeAudiolivro() {
         'supports' => array('title','editor','thumbnail','custom-fields')
     );
 
-    register_post_type( 'audiolivros' , $args );
+    register_post_type( 'audiolivro' , $args );
     flush_rewrite_rules();
 }
 
@@ -85,11 +85,12 @@ add_action('init', 'addCustomPostTypeAudiolivro');
 //Creates the taxonomy categorias to the postype audiolivro
 register_taxonomy(
     "categorias",
-    "audiolivros",
+    "audiolivro",
     array(
         "label" => "Categorias",
         "singular_label" => "Categoria",
         "rewrite" => true,
-        "hierarchical" => true
+        "hierarchical" => true,
+        'has_archive' => true
     )
 );
