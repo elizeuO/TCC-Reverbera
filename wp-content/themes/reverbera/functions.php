@@ -43,6 +43,7 @@ function registerStyles()
 
 add_action('wp_enqueue_scripts', 'registerStyles');
 
+//Creates the custom posttype Audiolivro
 function addCustomPostTypeAudiolivro() {
     $labels = array(
         'name' => _x('Áudiolivros', 'post type general name'),
@@ -81,6 +82,7 @@ function addCustomPostTypeAudiolivro() {
 
 add_action('init', 'addCustomPostTypeAudiolivro');
 
+//Creates the taxonomy categorias to the postype audiolivro
 register_taxonomy(
     "categorias",
     "audiolivros",
@@ -88,7 +90,6 @@ register_taxonomy(
         "label" => "Categorias",
         "singular_label" => "Categoria",
         "rewrite" => true,
-        "hierarchical" => true,
-        'menu_icon'   => 'dashicons-tag'
+        "hierarchical" => true
     )
 );

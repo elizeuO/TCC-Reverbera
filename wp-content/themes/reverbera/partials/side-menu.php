@@ -8,50 +8,16 @@
     <nav role="navigation" class="nav-menu w-nav-menu">
         <ul tabindex="0" role="menu" class="c-gategory-menu__list">
 
-            <li class="c-category-menu__link c__trasition300">
-                <a href="categoria-de-audiolivros.php"
-                   class="c__link c__trasition300 c__link-full-size">
-                    Aventura
-                </a>
-            </li>
-
-            <li class="c-category-menu__link c__trasition300">
-                <a href="categoria-de-audiolivros.php"
-                   class="c__link c__trasition300 c__link-full-size">
-                    Aventura
-                </a>
-            </li>
-
-            <li class="c-category-menu__link c__trasition300">
-                <a href="categoria-de-audiolivros.php"
-                   class="c__link c__trasition300 c__link-full-size">
-                    Aventura
-                </a>
-            </li>
-
-            <li class="c-category-menu__link c__trasition300">
-                <a href="categoria-de-audiolivros.php"
-                   class="c__link c__trasition300 c__link-full-size">
-                    Aventura
-                </a>
-            </li>
-
-            <li class="c-category-menu__link c__trasition300">
-                <a href="categoria-de-audiolivros.php"
-                   class="c__link c__trasition300 c__link-full-size">
-                    Aventura
-                </a>
-            </li>
-
-            <li class="c-category-menu__link c__trasition300">
-                <a href="categoria-de-audiolivros.php"
-                   class="c__link c__trasition300 c__link-full-size">
-                    Aventura
-                </a>
-            </li>
-
-
-        </ul>
+<!--            Renders the category list -->
+            <?php $categories = get_categories('taxonomy=categorias&post_type=audiolivro');
+            foreach ($categories as $category): ?>
+                <li class="c-category-menu__link c__trasition300">
+                    <a class="c__link c__trasition300 c__link-full-size">
+                        <?= $category->name; ?>
+                    </a>
+                </li>
+            <?php endforeach; ?>
+            </ul>
     </nav>
 
     <div role="button" tabindex="0" class="c__menu-button w-nav-button">
