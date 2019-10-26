@@ -54,7 +54,7 @@
                 <div class="c-info-content">
                     <div class="l-flex l-flex--center l-flex__wrap">
                         <div class="l__col-4 l__col-4--25">
-                            <img src="images/João-Marques-de-carvalho.jpg" alt="Foto do autor">
+                            <img src="assets/images/João-Marques-de-carvalho.jpg" alt="Foto do autor">
                         </div>
 
                         <div class="l__col-8">

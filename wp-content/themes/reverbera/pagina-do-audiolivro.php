@@ -48,7 +48,7 @@
                 <div class="c-info-content">
                     <div class="l-flex l-flex--center l-flex__wrap">
                         <div class="l__col-4 l__col-4--25">
-                            <img src="images/audiobook-example.jpg" alt="Capa do livro: Copa de árvores.">
+                            <img src="assets/images/audiobook-example.jpg" alt="Capa do livro: Copa de árvores.">
                         </div>
                         <div class="l__col-8">
                             <h2 class="c__title">

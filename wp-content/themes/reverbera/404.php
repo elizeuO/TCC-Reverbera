@@ -1,7 +1,7 @@
 <?php include('partials/header.php') ?>
   <div class="utility-page-wrap">
 
-    <div class="utility-page-content"><img src="images/Logo.png" alt="Alerta">
+    <div class="utility-page-content"><img src="assets/images/Logo.png" alt="Alerta">
 
         <h2 class="c__title c__title--less-margin c__center">
           Página não encontrada
