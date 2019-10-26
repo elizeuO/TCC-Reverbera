@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php include ('partials/header.php'); ?>
 
     <section class="c-section c-section--main-section">
         <div class="c-container c__center">
@@ -191,4 +191,4 @@
             </div>
         </div>
     </section>
-<?php get_footer(); ?>
+<?php include ('partials/footer.php'); ?>

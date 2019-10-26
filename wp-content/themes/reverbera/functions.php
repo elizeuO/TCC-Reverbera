@@ -1,5 +1,8 @@
 <?php
 
+//removes wordpress admin bar
+add_filter('show_admin_bar', '__return_false');
+
 //Register the scripts
 function registerScripts()
 {
@@ -19,6 +22,7 @@ function registerScripts()
     wp_register_script('fontSize', $path . 'fontSize.js', array(), '', true);
     wp_enqueue_script('fontSize');
 }
+
 add_action('wp_enqueue_scripts', 'registerScripts');
 
 
@@ -26,14 +30,15 @@ add_action('wp_enqueue_scripts', 'registerScripts');
 function registerStyles()
 {
     $path = get_template_directory_uri() . '/assets/css/';
-    wp_register_style('normalize', $path . 'normalize.css', array(), false,false);
+    wp_register_style('normalize', $path . 'normalize.css', array(), false, false);
     wp_enqueue_style('normalize');
 
-    wp_register_style('style', $path . 'style.css', array(), false,false);
+    wp_register_style('style', $path . 'style.css', array(), false, false);
     wp_enqueue_style('style');
 
-    wp_register_style('reverbera', $path . 'reverbera.css', array(), false,false);
+    wp_register_style('reverbera', $path . 'reverbera.css', array(), false, false);
     wp_enqueue_style('reverbera');
 
 }
+
 add_action('wp_enqueue_scripts', 'registerStyles');

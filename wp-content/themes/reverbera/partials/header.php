@@ -3,16 +3,27 @@
 <head>
     <meta lang="pt-br">
     <meta charset="utf-8">
-    <title><?= wp_title(); ?></title>
+
+    <title>
+        <?php
+        if ( is_home() ) {
+            echo "Reverbera | Áudiolivros Gratuitos";
+        } else {
+            wp_title( '|', true, 'right' );
+            bloginfo( 'name' );
+        }
+        ?>
+    </title>
+
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link rel="apple-touch-icon" sizes="180x180"
-          href="<?= get_template_directory_uri(); ?>/images/apple-touch-icon.png">
+          href="<?= get_template_directory_uri(); ?>/assets/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32"
-          href="<?= get_template_directory_uri(); ?>/images/favicon-32x32.png">
+          href="<?= get_template_directory_uri(); ?>/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16"
-          href="<?= get_template_directory_uri(); ?>/images/favicon-16x16.png">
-    <link rel="manifest" href="<?= get_template_directory_uri(); ?>/images/site.webmanifest">
-    <link rel="mask-icon" href="<?= get_template_directory_uri(); ?>/images/safari-pinned-tab.svg" color="#5bbad5">
+          href="<?= get_template_directory_uri(); ?>/assets/simages/favicon-16x16.png">
+    <link rel="manifest" href="<?= get_template_directory_uri(); ?>/assets/images/site.webmanifest">
+    <link rel="mask-icon" href="<?= get_template_directory_uri(); ?>/assets/images/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <?php wp_head(); ?>
@@ -26,7 +37,7 @@
 
                 <li class="c-header__brand">
                     <a title="Início" href="<?= home_url(); ?>" class="w-inline-block w--current">
-                        <img src="<?= get_template_directory_uri(); ?>/images/Logo_1.png"
+                        <img src="<?= get_template_directory_uri(); ?>/assets/images/Logo_1.png"
                              alt="Reverbera, áudio livros gratuitos">
                     </a>
                 </li>
