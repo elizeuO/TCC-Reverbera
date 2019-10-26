@@ -1,4 +1,4 @@
-<?php include ('partials/header.php'); ?>
+<?php include('partials/header.php'); ?>
 
     <section aria-labeledby="mainTitle" class="c-section c-section--main-section">
         <div class="c-container c__center">
@@ -46,17 +46,17 @@
                         Últimos lançamentos
                     </h2>
                     <ul class="l-flex l-flex--center l-flex__wrap">
+
                         <?php
-                        include('partials/audiobook-item.php');
-                        include('partials/audiobook-item.php');
-                        include('partials/audiobook-item.php');
-                        include('partials/audiobook-item.php');
-                        include('partials/audiobook-item.php');
-                        include('partials/audiobook-item.php');
-                        ?>
+                        $args = array('post_type' => 'audiolivro', 'posts_per_page' => 6);
+                        $query = new WP_Query($args);
+                        while ($query->have_posts()) : $query->the_post();
+                           include('partials/audiobook-item.php');
+                        endwhile; ?>
+
                     </ul>
                 </main>
             </div>
         </div>
     </section>
-<?php include ('partials/footer.php'); ?>
+<?php include('partials/footer.php'); ?>

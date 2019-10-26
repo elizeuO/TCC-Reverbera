@@ -1,7 +1,7 @@
 <div tabindex="0" aria-label="Player de Audiolivro" class="c-audio-player">
     <div class="w-embed">
         <audio>
-            <source src="https://ia800704.us.archive.org/34/items/contos_do_norte_1812_librivox/contosdonorte_0_marquesdecarvalho_128kb.mp3"
+            <source src="<?=wp_get_attachment_url( $attachment_id )?>"
                     type="audio/mpeg">
         </audio>
     </div>
@@ -23,7 +23,7 @@
                  id="volumeControlBar" tabindex="0">
                 <div class="c-audio__controller js-volumecontroller"></div>
             </div>
-            <a href="<?= get_template_directory_uri()?>/audios/contosdonorte.mp3" title="Fazer download do audiolivro" aria-label="Fazer download do audiolivro"
+            <a href="<?=wp_get_attachment_url( $attachment_id )?>" title="Fazer download do audiolivro" aria-label="Fazer download do audiolivro"
                     target="_blank" class="c-audio-player__button c-audio-player__button--blue-color-no-border c__trasition300 w-button" download>
                 <span aria-hidden="true"></span>
             </a>

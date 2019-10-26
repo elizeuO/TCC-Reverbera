@@ -380,11 +380,11 @@ ol {
   line-height: 1.2em;
 }
 
-.c-adiobook__info {
+.c-audiobook__info {
   line-height: 1.5em;
 }
 
-.c-adiobook__info.c__paragraph--left-align {
+.c-audiobook__info.c__paragraph--left-align {
   text-align: left;
 }
 

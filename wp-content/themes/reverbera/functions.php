@@ -71,11 +71,12 @@ function addCustomPostTypeAudiolivro() {
         'query_var' => true,
         'rewrite' => true,
         'capability_type' => 'post',
+        'has-singular' =>true,
         'has_archive' => true,
         'hierarchical' => false,
         'menu_position' => null,
         'menu_icon'   => 'dashicons-format-audio',
-        'supports' => array('title','editor','thumbnail','custom-fields')
+        'supports' => array('title','editor','thumbnail','custom-fields','author')
     );
 
     register_post_type( 'audiolivro' , $args );
@@ -91,9 +92,9 @@ register_taxonomy(
     array(
         "label" => "Categorias",
         "singular_label" => "Categoria",
-        "rewrite" => false,
-        "hierarchical" => false,
-        'has_archive' => false
+        "rewrite" => true,
+        "hierarchical" => true,
+        'has_archive' => true
     )
 );
 
