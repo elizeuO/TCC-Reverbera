@@ -43,6 +43,8 @@ function registerStyles()
 
 add_action('wp_enqueue_scripts', 'registerStyles');
 
+add_theme_support( 'post-thumbnails' );
+
 //Creates the custom posttype Audiolivro
 function addCustomPostTypeAudiolivro() {
     $labels = array(
@@ -89,8 +91,9 @@ register_taxonomy(
     array(
         "label" => "Categorias",
         "singular_label" => "Categoria",
-        "rewrite" => true,
-        "hierarchical" => true,
-        'has_archive' => true
+        "rewrite" => false,
+        "hierarchical" => false,
+        'has_archive' => false
     )
 );
+
