@@ -5,7 +5,7 @@ $attachment_id = get_field('audioFile');
 $metadata = wp_get_attachment_metadata($attachment_id);
 $size = $metadata['filesize'];
 
-$author = get_field('author');
+$authorName = get_field('author');
 
 
 ?>
@@ -25,7 +25,7 @@ $author = get_field('author');
                      Autor:
                      </span>
 <!--                    using foreach to reset the wordpress loop to display the author name-->
-                    <?php foreach ($author as $author):
+                    <?php foreach ($authorName as $author):
                         echo($author->post_title);
                     endforeach; ?>
                     <?= $author->post_title ?>
