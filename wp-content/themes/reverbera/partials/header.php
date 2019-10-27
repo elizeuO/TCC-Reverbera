@@ -6,11 +6,11 @@
 
     <title>
         <?php
-        if ( is_home() ) {
-            echo "Reverbera | Áudiolivros Gratuitos";
+        if (is_home()) {
+            echo "Reverbera - Áudiolivros Gratuitos";
         } else {
-            wp_title( '|', true, 'right' );
-            bloginfo( 'name' );
+            wp_title('|', true, 'right');
+            bloginfo('name');
         }
         ?>
     </title>
@@ -23,7 +23,8 @@
     <link rel="icon" type="image/png" sizes="16x16"
           href="<?= get_template_directory_uri(); ?>/assets/simages/favicon-16x16.png">
     <link rel="manifest" href="<?= get_template_directory_uri(); ?>/assets/images/site.webmanifest">
-    <link rel="mask-icon" href="<?= get_template_directory_uri(); ?>/assets/images/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="mask-icon" href="<?= get_template_directory_uri(); ?>/assets/images/safari-pinned-tab.svg"
+          color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <?php wp_head(); ?>

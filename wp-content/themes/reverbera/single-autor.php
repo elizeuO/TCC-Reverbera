@@ -41,7 +41,7 @@
                             </li>
 
                             <li class="c-breadcrumb__link">
-                                <a href="pagina-do-autor.php" aria-current="page"
+                                <a href="single-autor.php" aria-current="page"
                                    class="c__link c__trasition300 w--current">
                                     Autor: João
                                     Marques de carvalho

@@ -64,7 +64,7 @@
                                 floresta, dos rios amazônicos e das populações ribeirinhas em destaque.
                             </p>
                             <p class="c__paragraph c-paragraph--info c__link c__trasition300">
-                                <a href="pagina-do-autor.php" class="c__link">
+                                <a href="single-autor.php" class="c__link">
                                     <strong>
                                         Autor:
                                     </strong>

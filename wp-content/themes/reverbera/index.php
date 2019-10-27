@@ -45,7 +45,7 @@
                     <h2 class="c__title c__center">
                         Últimos lançamentos
                     </h2>
-                    <ul class="l-flex l-flex--center l-flex__wrap">
+                    <ul class="l-flex l-flex--center l-flex--stretch l-flex__wrap">
 
                         <?php
                         $args = array('post_type' => 'audiolivro', 'posts_per_page' => 6);
