@@ -4,6 +4,10 @@ $attachment_id = get_field('audioFile');
 
 $metadata = wp_get_attachment_metadata($attachment_id);
 $size = $metadata['filesize'];
+
+$author = get_field('author');
+
+
 ?>
 <li class="l__col-4">
     <article class="c-audiobook">
@@ -20,7 +24,11 @@ $size = $metadata['filesize'];
                     <span class="c__bold">
                      Autor:
                      </span>
-                    João Marques de Carvalho
+<!--                    using foreach to reset the wordpress loop to display the author name-->
+                    <?php foreach ($author as $author):
+                        echo($author->post_title);
+                    endforeach; ?>
+                    <?= $author->post_title ?>
                 </div>
                 <div class="c-audiobook__info">
                   <span class="c__bold">
