@@ -8,5 +8,5 @@ wp-content/uploads.tar.gz
 wp-content/plugins/wp-lorem-ipsum
 wp-content/plugins/lorem-ipsum
 .idea
-.idea/workspace.xml
+/**/.idea/workspace.xml
 .DS_Store
