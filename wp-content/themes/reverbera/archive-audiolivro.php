@@ -1,10 +1,12 @@
-<?php include('partials/header.php') ?>
+<?php include('partials/header.php');
+$categoryName = $_GET['categoria'];
+?>
     <section class="c-section c-section--main-section">
         <div class="c-container c__center">
             <h1 class="c__title c__white-text c-title--main-title">
-          <span class="c__section-title__big-title c__center">
-              Categoria Aventura
-          </span>
+    <span class="c__section-title__big-title c__center">
+    Categoria: <?= isset($categoryName) ? $categoryName : '' ?>
+    </span>
             </h1>
         </div>
     </section>
@@ -40,13 +42,19 @@
                     </h2>
                     <ul class="l-flex l-flex--center l-flex__wrap">
                         <?php
-                        include('partials/audiobook-item.php');
-                        include('partials/audiobook-item.php');
-                        include('partials/audiobook-item.php');
-                        include('partials/audiobook-item.php');
-                        include('partials/audiobook-item.php');
-                        include('partials/audiobook-item.php');
-                        ?>
+                        $args = array('post_type' => 'audiolivro',
+                            //Adds a taxonomy filter
+                            'tax_query' => array(
+                            array(
+                                'taxonomy' => 'categorias',
+                                'field' => 'slug',
+                                'terms' => $categoryName
+                            )
+                        ),);
+                        $query = new WP_Query($args);
+                        while ($query->have_posts()) : $query->the_post();
+                            include('partials/audiobook-item.php');
+                        endwhile; ?>
                     </ul>
                 </main>
             </div>

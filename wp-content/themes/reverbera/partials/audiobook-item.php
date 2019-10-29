@@ -28,7 +28,6 @@ $authorName = get_field('author');
                     <?php foreach ($authorName as $author):
                         echo($author->post_title);
                     endforeach; ?>
-                    <?= $author->post_title ?>
                 </div>
                 <div class="c-audiobook__info">
                   <span class="c__bold">
