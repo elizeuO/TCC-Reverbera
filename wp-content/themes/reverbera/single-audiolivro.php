@@ -5,7 +5,7 @@ $authorName = get_field('author');
 $attachment_id = get_field('audioFile');
 $metadata = wp_get_attachment_metadata($attachment_id);
 $size = $metadata['filesize'];
-$duration = $metadata['length_formatted '];
+$duration = $metadata['length_formatted'];
 ?>
     <section aria-labeledby="mainTitle" class="c-section c-section--main-section">
         <div class="c-container c__center">
