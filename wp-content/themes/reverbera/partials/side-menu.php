@@ -12,6 +12,7 @@
             <?php $categories = get_categories('taxonomy=categorias&post_type=audiolivro');
             foreach ($categories as $category): ?>
                 <li class="c-category-menu__link c__trasition300">
+<!--                    insert the category name in the url -->
                     <a href="<?=  get_post_type_archive_link('audiolivro') ?>?categoria=<?= $category->name; ?>" class="c__link c__trasition300 c__link-full-size">
                         <?= $category->name; ?>
                     </a>

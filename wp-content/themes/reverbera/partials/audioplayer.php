@@ -1,8 +1,8 @@
 <div tabindex="0" aria-label="Player de Audiolivro" class="c-audio-player">
     <div class="w-embed">
         <audio>
-            <source src="<?=wp_get_attachment_url( $attachment_id )?>"
-                    type="audio/mpeg">
+<!--            gets the audiofile-->
+            <source src="<?=wp_get_attachment_url( $attachment_id )?>"type="audio/mpeg">
         </audio>
     </div>
     <div class="c-audio-player__controls">

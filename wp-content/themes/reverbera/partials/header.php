@@ -9,6 +9,7 @@
         if (is_home()) {
             echo "Reverbera - Áudiolivros Gratuitos";
         } else {
+            //shows site name with the current page name
             wp_title('|', true, 'right');
             bloginfo('name');
         }

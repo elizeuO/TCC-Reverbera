@@ -48,6 +48,7 @@
                     <ul class="l-flex l-flex--center l-flex--stretch l-flex__wrap">
 
                         <?php
+                        //Selects the 6 lasts audiobooks in the database and shows then
                         $args = array('post_type' => 'audiolivro', 'posts_per_page' => 6);
                         $query = new WP_Query($args);
                         while ($query->have_posts()) : $query->the_post();

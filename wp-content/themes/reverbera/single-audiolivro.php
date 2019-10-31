@@ -1,7 +1,12 @@
 <?php include('partials/header.php');
+
+//gets the audiobook of the single page
 $audiobook = get_post();
+
+//gets the author of audiobook of the single page
 $authorName = get_field('author');
 
+//gets the audiobook file
 $attachment_id = get_field('audioFile');
 $metadata = wp_get_attachment_metadata($attachment_id);
 $size = $metadata['filesize'];
@@ -72,9 +77,7 @@ $duration = $metadata['length_formatted'];
 
                                 <?php if ($authorName) { ?>
                                     <p class="c__paragraph c-paragraph--info c__link c__trasition300">
-                                        <?php foreach ($authorName
-
-                                        as $author): ?>
+                                        <?php foreach ($authorName as $author): ?>
                                         <a href="<?= get_permalink($author) ?>" class="c__link">
                                             <strong>
                                                 Autor:

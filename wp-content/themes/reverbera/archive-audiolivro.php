@@ -1,4 +1,5 @@
 <?php include('partials/header.php');
+//stores the category name from the url
 $categoryName = $_GET['categoria'];
 ?>
     <section class="c-section c-section--main-section">
@@ -42,6 +43,7 @@ $categoryName = $_GET['categoria'];
                     </h2>
                     <ul class="l-flex l-flex--center l-flex__wrap">
                         <?php
+                        //shows the audiobooks that matches with the category name
                         $args = array('post_type' => 'audiolivro',
                             //Adds a taxonomy filter
                             'tax_query' => array(

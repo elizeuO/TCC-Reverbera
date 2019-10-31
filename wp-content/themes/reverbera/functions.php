@@ -3,7 +3,7 @@
 //removes wordpress admin bar
 add_filter('show_admin_bar', '__return_false');
 
-//Register the scripts
+//Register and enqueue the scripts
 function registerScripts()
 {
     $path = get_template_directory_uri() . '/assets/js/';
@@ -26,7 +26,7 @@ function registerScripts()
 add_action('wp_enqueue_scripts', 'registerScripts');
 
 
-//Register the CSS styles
+//Register and enqueue the CSS styles
 function registerStyles()
 {
     $path = get_template_directory_uri() . '/assets/css/';
@@ -43,10 +43,11 @@ function registerStyles()
 
 add_action('wp_enqueue_scripts', 'registerStyles');
 
-add_theme_support( 'post-thumbnails' );
+add_theme_support('post-thumbnails');
 
-//Creates the custom posttype Audiolivro
-function addCustomPostTypeAudiolivro() {
+//Creates the custom post type Audiolivro
+function addCustomPostTypeAudiolivro()
+{
     $labels = array(
         'name' => _x('Áudiolivros', 'post type general name'),
         'singular_name' => _x('Áudiolivro', 'post type singular name'),
@@ -56,7 +57,7 @@ function addCustomPostTypeAudiolivro() {
         'new_item' => __('Novo Item'),
         'view_item' => __('Ver Item'),
         'search_items' => __('Procurar Itens'),
-        'not_found' =>  __('Nenhum registro encontrado'),
+        'not_found' => __('Nenhum registro encontrado'),
         'not_found_in_trash' => __('Nenhum registro encontrado na lixeira'),
         'parent_item_colon' => '',
         'menu_name' => 'Áudiolivros',
@@ -71,15 +72,15 @@ function addCustomPostTypeAudiolivro() {
         'query_var' => true,
         'rewrite' => true,
         'capability_type' => 'post',
-        'has-singular' =>true,
+        'has-singular' => true,
         'has_archive' => true,
         'hierarchical' => false,
         'menu_position' => null,
-        'menu_icon'   => 'dashicons-format-audio',
-        'supports' => array('title','editor','thumbnail','custom-fields')
+        'menu_icon' => 'dashicons-format-audio',
+        'supports' => array('title', 'editor', 'thumbnail', 'custom-fields')
     );
 
-    register_post_type( 'audiolivro' , $args );
+    register_post_type('audiolivro', $args);
     flush_rewrite_rules();
 }
 
@@ -98,8 +99,9 @@ register_taxonomy(
     )
 );
 
-//Creates the custom posttype Autor
-function addCustomPostTypeAutor() {
+//Creates the custom post type Autor
+function addCustomPostTypeAutor()
+{
     $labels = array(
         'name' => _x('Autor', 'post type general name'),
         'singular_name' => _x('Autor', 'post type singular name'),
@@ -109,7 +111,7 @@ function addCustomPostTypeAutor() {
         'new_item' => __('Novo Item'),
         'view_item' => __('Ver Item'),
         'search_items' => __('Procurar Itens'),
-        'not_found' =>  __('Nenhum registro encontrado'),
+        'not_found' => __('Nenhum registro encontrado'),
         'not_found_in_trash' => __('Nenhum registro encontrado na lixeira'),
         'parent_item_colon' => '',
         'menu_name' => 'Autores',
@@ -124,15 +126,15 @@ function addCustomPostTypeAutor() {
         'query_var' => true,
         'rewrite' => true,
         'capability_type' => 'post',
-        'has-singular' =>true,
+        'has-singular' => true,
         'has_archive' => true,
         'hierarchical' => false,
         'menu_position' => null,
-        'menu_icon'   => 'dashicons-admin-users',
-        'supports' => array('title','editor','thumbnail','custom-fields')
+        'menu_icon' => 'dashicons-admin-users',
+        'supports' => array('title', 'editor', 'thumbnail', 'custom-fields')
     );
 
-    register_post_type( 'autor' , $args );
+    register_post_type('autor', $args);
     flush_rewrite_rules();
 }
 
