@@ -86,7 +86,7 @@ ol {
     list-style-type: none;
 }
 
-.l-flex.l-flex--center {
+.l-flex--center {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -97,12 +97,17 @@ ol {
     align-items: center;
 }
 
-.l-flex.l-flex--center.l-flex__wrap {
+.l-flex__wrap {
     width: 100%;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
+
+.l-flex--stretch{
+    align-items: stretch;
+}
+
 
 .c-header__brand {
     margin-right: auto;
@@ -476,9 +481,9 @@ ol {
 .c-audio__control-bar {
     position: relative;
     overflow: hidden;
-    width: 50%;
-    margin-right: 10px;
-    margin-left: 10px;
+    width: 40%;
+    margin-right: 5px;
+    margin-left: 5px;
     padding-top: 3px;
     padding-bottom: 3px;
     border-radius: 20px;
@@ -709,7 +714,7 @@ ol {
     }
 
     .c-audio-player {
-        width: 50%;
+        width: 75%;
         margin-right: auto;
         margin-left: auto;
         padding-right: 10px;
@@ -790,7 +795,6 @@ ol {
     }
 
     .c-audio-player {
-        width: 45%;
         padding-right: 10px;
         padding-left: 10px;
     }
