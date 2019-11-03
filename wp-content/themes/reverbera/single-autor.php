@@ -17,43 +17,9 @@ $author = get_post();
             <div class="l-flex l-flex--container">
                 <?php include('partials/side-menu.php') ?>
                 <main id="conteudo" accesskey="1" class="c-content-wrapper">
-                    <div class="c-breadcrumb">
-                        <div class="l-flex l-flex--center l-flex__wrap">
-                            <div class="c-bread-crumb__description">
-                                Você está aqui:
-                            </div>
-                            <ol role="navigation" class="l-flex">
 
-                                <li class="c-breadcrumb__link">
-                                    <a href="index.php" class="c__link c__trasition300">
-                                        Página Inicial
-                                    </a>
-                                </li>
+                    <?php include('partials/breadcrumb.php') ?>
 
-                                <li class="c-breadcrumb__link">
-                                    <a href="archive-audiolivro.php" class="c__link c__trasition300">
-                                        Categoria: Aventura
-                                    </a>
-                                </li>
-
-                                <li class="c-breadcrumb__link">
-                                    <a href="single-audiolivro.php" class="c__link c__trasition300">
-                                        Audiolivro: Contos do
-                                        Norte
-                                    </a>
-                                </li>
-
-                                <li class="c-breadcrumb__link">
-                                    <a href="single-autor.php" aria-current="page"
-                                       class="c__link c__trasition300 w--current">
-                                        Autor: João
-                                        Marques de carvalho
-                                    </a>
-                                </li>
-
-                            </ol>
-                        </div>
-                    </div>
                     <div class="c-info-content">
                         <div class="l-flex l-flex--center l-flex__wrap">
                             <div class="l__col-4 l__col-4--25">

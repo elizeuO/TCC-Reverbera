@@ -11,6 +11,13 @@ $attachment_id = get_field('audioFile');
 $metadata = wp_get_attachment_metadata($attachment_id);
 $size = $metadata['filesize'];
 $duration = $metadata['length_formatted'];
+
+$categoryName;
+$category = get_the_terms(get_post()->ID, 'categorias');
+foreach ($category as $term) {
+    $categoryName = $term->name;
+}
+
 ?>
     <section aria-labeledby="mainTitle" class="c-section c-section--main-section">
         <div class="c-container c__center">
@@ -28,36 +35,10 @@ $duration = $metadata['length_formatted'];
                 <?php include('partials/side-menu.php') ?>
 
                 <main id="conteudo" accesskey="1" class="c-content-wrapper">
-                    <div class="c-breadcrumb">
-                        <div class="l-flex l-flex--center l-flex__wrap">
-                            <div class="c-bread-crumb__description">
-                                Você está aqui:
-                            </div>
-                            <ol role="navigation" class="l-flex">
 
-                                <li class="c-breadcrumb__link">
-                                    <a href="index.php" class="c__link c__trasition300">
-                                        Página Inicial
-                                    </a>
-                                </li>
+                    <?php include('partials/breadcrumb.php') ?>
 
-                                <li class="c-breadcrumb__link">
-                                    <a href="archive-audiolivro.php" aria-current="page"
-                                       class="c__link c__trasition300">
-                                        Categoria: Aventura
-                                    </a>
-                                </li>
-                                <li class="c-breadcrumb__link">
-                                    <a href="single-audiolivro.php" aria-current="page"
-                                       class="c__link c__trasition300 w--current">
-                                        Audiolivro: Contos do Norte
-                                    </a>
-                                </li>
 
-                            </ol>
-
-                        </div>
-                    </div>
                     <div class="c-info-content">
                         <div class="l-flex l-flex--center l-flex__wrap">
                             <div class="l__col-4 l__col-4--25">
@@ -91,12 +72,8 @@ $duration = $metadata['length_formatted'];
                                     <strong>
                                         Categoria:
                                     </strong>
-                                    <?php
-                                    $category = get_the_terms(get_post()->ID, 'categorias');
-                                    foreach ($category as $term) {
-                                        echo $term->name;
-                                    }
-                                    ?>
+                                    <?= $categoryName?>
+
 
                                 </p>
 

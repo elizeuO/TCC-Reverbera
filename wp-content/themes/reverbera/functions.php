@@ -139,3 +139,50 @@ function addCustomPostTypeAutor()
 }
 
 add_action('init', 'addCustomPostTypeAutor');
+
+
+add_action('bcn_after_fill', 'project_rebuild_breadcrumbs');
+/**
+ * Rebuild the breadcrumb created by Breadcrumb NavXT.
+ *
+ * @param bcn_breadcrumb_trail $breadcrumb Instance of the currently active breadcrumb trail.
+ */
+function project_rebuild_breadcrumbs($breadcrumb)
+{
+
+
+    {
+        if (!is_singular(['audiolivro'])) {
+            return;
+        }
+
+        $category = get_the_terms(get_post()->ID, 'categorias');
+        foreach ($category as $term) {
+            $categoryName = $term->name;
+        }
+
+        // Default breadcrumb template.
+        $breadcrumb_template = '<span class="breadcrumb-link-wrap" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" property="itemListElement" typeof="ListItem"><a itemprop="item" property="item" typeof="WebPage" title="Ir para categoria: %title%." href="%link%" class="%type%"><span property="name">%htitle%</span></a><meta property="position" content="%position%"></span>';
+
+        /**
+         * Store the first and last breadcrumbs
+         */
+        $breadcrumb_root = reset($breadcrumb->breadcrumbs);
+        $breadcrumb_end = end($breadcrumb->breadcrumbs);
+        /**
+         * Build the custom Audiobook breadcrumb.
+         */
+        $audiobook_page = get_page_by_path('audiolivro');
+        $breadcrumb_title = $categoryName;
+        $breadcrumb_link = get_post_type_archive_link('audiolivro') . '?categoria=' . $categoryName;
+        $audiobook_item_breadcrumb = new bcn_breadcrumb($breadcrumb_title, $breadcrumb_template, [], $breadcrumb_link, $audiobook_page->ID);
+        /**
+         * Update the Breadcrumb NavXT object.
+         */
+        $breadcrumb->breadcrumbs = [
+            $breadcrumb_root,
+            $audiobook_item_breadcrumb,
+            $breadcrumb_end,
+        ];
+    }
+}
