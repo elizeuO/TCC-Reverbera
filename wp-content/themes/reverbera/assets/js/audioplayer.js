@@ -93,21 +93,10 @@ function initializeAudioPlayer(audioPlayer) {
         keyDownVolumeBar.call(this, event, additionalParameter1, additionalParameter2, additionalParameter3, additionalParameter4, additionalParameter5);
     }, false);
 
-    //TODO: ADAPTAR NO BACKEND
-    // document.getElementById('download').setAttribute('href','https://ia800704.us.archive.org/34/items/contos_do_norte_1812_librivox/contosdonorte_0_marquesdecarvalho_128kb.mp3');
-    // document.getElementById('download').setAttribute('download','contos.mp3');
-
 }
 
 //Play or Pause current audiobook
 function playOrPause(audioBook, playButton, timeControlBar, currentTime, timeControlBarSize, progressBar) {
-
-    // //TODO:pause all others audiobooks before start playing
-    // let audioBooksList = document.querySelectorAll('audio');
-    // audioBooksList.forEach(function (element){
-    //     element.pause();
-    // });
-
 
     if (!audioBook.paused && !audioBook.ended) {
         audioBook.pause();

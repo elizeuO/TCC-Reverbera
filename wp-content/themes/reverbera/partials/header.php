@@ -32,6 +32,7 @@
 </head>
 <body class="body">
 <header id="menu" tabindex="0" accesskey="2" class="c-header">
+
     <div class="c-container">
         <div data-collapse="medium" data-animation="default" data-duration="400" role="navigation"
              class="c-header__nav w-nav">
@@ -86,13 +87,18 @@
                 </li>
 
                 <li>
-                    <div tabindex="0" title="Ligar auto contraste" role="button" aria-pressed="false"
-                         class="c__acessible-button c__trasition-300">
-                        <div class="c__contrast-button c__contrast-button-light"></div>
-                    </div>
+                    <button tabindex="0" title="Ligar alto contraste" aria-pressed="false"
+                            class="c__acessible-button c__contrast-button c__trasition-300"
+                            onclick="toogleContrast('<?= get_template_directory_uri() ?>/assets/css/contrast.css')">
+                    </button>
                 </li>
 
             </ul>
         </div>
     </div>
+
+    <script>
+        checkContrast('<?= get_template_directory_uri();?>/assets/css/contrast.css');
+    </script>
+
 </header>

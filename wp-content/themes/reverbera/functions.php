@@ -21,6 +21,9 @@ function registerScripts()
 
     wp_register_script('fontSize', $path . 'fontSize.js', array(), '', true);
     wp_enqueue_script('fontSize');
+
+    wp_register_script('contrast', $path . 'contrast.js', array(), '', false);
+    wp_enqueue_script('contrast');
 }
 
 add_action('wp_enqueue_scripts', 'registerScripts');
