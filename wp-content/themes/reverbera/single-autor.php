@@ -21,15 +21,15 @@ $author = get_post();
                     <?php include('partials/breadcrumb.php') ?>
 
                     <div class="c-info-content">
+                        <h2 class="c__title c__center">
+                            <?= the_title(); ?>
+                        </h2>
                         <div class="l-flex l-flex--center l-flex__wrap">
                             <div class="l__col-4 l__col-4--25">
-                                <img src="<?= get_the_post_thumbnail_url() ?>" alt="<?= the_field('coverAlt') ?>">
+                                <img src="<?= get_the_post_thumbnail_url() ?>" alt="<?= the_field('authorDescription') ?>">
                             </div>
 
                             <div class=" l__col-8">
-                                <h2 class="c__title">
-                                    <?= the_title(); ?>
-                                </h2>
                                 <p class="c__paragraph c-paragraph--info">
                                     <?= $author->post_content; ?>
                                 </p>

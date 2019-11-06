@@ -150,6 +150,7 @@ function formatDuration($duration){
     //gets the subtring after ':'
     $seconds = substr($duration, strpos($duration, ":") + 1);
 
+//formats the duration time
    return $minutes.($minutes>1?' minutos ':' minuto ').' e '.$seconds.($minutes>1?' segundos ':' segundo ');
 }
 
