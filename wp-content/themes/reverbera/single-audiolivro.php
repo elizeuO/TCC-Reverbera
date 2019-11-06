@@ -101,7 +101,7 @@ foreach ($category as $term) {
                                     <strong>
                                         Duração:
                                     </strong>
-                                    0:<?= $duration; ?>
+                                    <?= formatDuration($duration); ?>
                                 </p>
                                 <p class="c__paragraph c-paragraph--info">
                                     <strong>

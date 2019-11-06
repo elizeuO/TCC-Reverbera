@@ -523,10 +523,11 @@ ol {
     width: 0;
 }
 
-.c--footer {
+.c-footer {
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #00001d;
+    border: transparent 1px solid;
 }
 
 .c__accessible-text {

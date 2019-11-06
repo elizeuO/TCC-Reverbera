@@ -143,6 +143,15 @@ function addCustomPostTypeAutor()
 
 add_action('init', 'addCustomPostTypeAutor');
 
+function formatDuration($duration){
+    //gets the subtring before ':'
+    $minutes = strtok($duration, ':');
+
+    //gets the subtring after ':'
+    $seconds = substr($duration, strpos($duration, ":") + 1);
+
+   return $minutes.($minutes>1?' minutos ':' minuto ').' e '.$seconds.($minutes>1?' segundos ':' segundo ');
+}
 
 add_action('bcn_after_fill', 'project_rebuild_breadcrumbs');
 /**
@@ -152,8 +161,6 @@ add_action('bcn_after_fill', 'project_rebuild_breadcrumbs');
  */
 function project_rebuild_breadcrumbs($breadcrumb)
 {
-
-
     {
         if (!is_singular(['audiolivro'])) {
             return;
