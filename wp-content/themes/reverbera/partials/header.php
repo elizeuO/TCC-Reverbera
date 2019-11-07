@@ -53,7 +53,7 @@
 
                 <li>
                     <a href="#" class="c__link c__trasition300">
-                        Ir para o o menu [2]
+                        Ir para o menu [2]
                     </a>
                 </li>
 
