@@ -24,7 +24,8 @@ function toogleContrast(href) {
     let currentValue = window.localStorage.getItem('contrast');
     let button = document.querySelector('.c__contrast-button');
 
-    if (currentValue == 'off') {
+
+    if ((currentValue == 'off')||(currentValue == null)) {
         //changes the value of local storage variable
         window.localStorage.setItem('contrast', 'on');
 

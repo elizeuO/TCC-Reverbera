@@ -699,6 +699,7 @@ ol {
 
     .c-gategory-menu__list {
         background-color: #fff;
+        border: transparent 1px solid;
     }
 
     .c-content-wrapper {

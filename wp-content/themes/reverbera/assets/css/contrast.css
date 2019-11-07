@@ -1,4 +1,4 @@
-body a {
+body a, .c__menu-button {
     color: yellow !important;
 }
 
@@ -6,7 +6,7 @@ body a:hover, body a:focus {
     color: white !important;
 }
 
-.c-header,.c-footer {
+.c-header,.c-footer,.c__menu-button, .c-gategory-menu__list{
     background: #000 !important;
 }
 
@@ -24,7 +24,7 @@ body a:hover, body a:focus {
 
 
 .c-header, .c-content-wrapper, .c-category-menu, .c-category-menu__title, .c-audio-player,
-.c-audio-player__button, .c__contrast-button,.c-list__item,.c-list__item:first-child,.c-footer  {
+.c-audio-player__button, .c__contrast-button,.c-list__item,.c-list__item:first-child,.c-footer,.c-gategory-menu__list  {
     border-color: white;
 }
 
