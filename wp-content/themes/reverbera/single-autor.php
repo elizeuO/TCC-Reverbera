@@ -26,7 +26,7 @@ $author = get_post();
                         </h2>
                         <div class="l-flex l-flex--center l-flex__wrap">
                             <div class="l__col-4 l__col-4--25">
-                                <img src="<?= get_the_post_thumbnail_url() ?>" alt="<?= the_field('authorDescription') ?>">
+                                <img src="<?= get_the_post_thumbnail_url() ?>" alt="Foto do autor: <?= the_field('authorDescription') ?>">
                             </div>
 
                             <div class=" l__col-8">

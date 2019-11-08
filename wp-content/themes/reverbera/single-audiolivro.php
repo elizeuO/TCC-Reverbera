@@ -46,7 +46,7 @@ foreach ($category as $term) {
 
                         <div class="l-flex l-flex--center l-flex__wrap">
                             <div class="l__col-4 l__col-4--25">
-                                <img src="<?= get_the_post_thumbnail_url() ?>" alt="<?= the_field('coverAlt') ?>">
+                                <img src="<?= get_the_post_thumbnail_url() ?>" alt=" Capa do livro: <?= the_field('coverAlt') ?>">
                             </div>
                             <div class="l__col-8">
                                 <p class="c__paragraph c-paragraph--info">

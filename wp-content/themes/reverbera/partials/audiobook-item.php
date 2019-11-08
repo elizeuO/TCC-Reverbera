@@ -15,7 +15,7 @@ $authorName = get_field('author');
 <li class="l__col-4">
     <article class="c-audiobook">
         <a href="<?= the_permalink() ?>" class="c-audiobook__link c__trasition300 w-inline-block">
-            <img src="<?= get_the_post_thumbnail_url() ?>" alt="<?= the_field('coverAlt') ?>">
+            <img src="<?= get_the_post_thumbnail_url() ?>" alt="Capa do livro: <?= the_field('coverAlt') ?>">
             <div class="c-audiobook__info-box">
                 <h3 class="c-audiobook__title">
                  <span class="c__accessible-text">
