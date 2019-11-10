@@ -11,16 +11,16 @@ function initializeAudioPlayer(audioPlayer) {
     let muteButton = audioPlayer.querySelector('.js-mutebutton');
 
     let timeControlBar = audioPlayer.querySelector('.js-timecontrolbar');
-    //initialize aria values of time controll bar
+    //initialize aria values of time control bar
     audioBook.addEventListener("loadedmetadata", function () {
-        //you can display the duration now
+        //fixes the duration display
         let minutes = parseInt(audioBook.duration / 60);
         let seconds = parseInt(audioBook.duration % 60);
         duration.innerHTML = minutes + ':' + seconds;
 
         timeControlBar.setAttribute('aria-valuemax', parseInt(audioBook.duration));
         timeControlBar.setAttribute('aria-valuenow', '0');
-        timeControlBar.setAttribute('aria-valuetext', parseInt(audioBook.currentTime / 60).toString() + 'minutos e' + parseInt(audioBook.currentTime % 60).toString()+'segundos'+' '+'de'+' '+minutes.toString() + 'minutos e' + seconds.toString()+'segundos');
+        timeControlBar.setAttribute('aria-valuetext', parseInt(audioBook.currentTime / 60).toString() + 'minutos e' + parseInt(audioBook.currentTime % 60).toString() + 'segundos' + ' ' + 'de' + ' ' + minutes.toString() + 'minutos e' + seconds.toString() + 'segundos');
     });
     timeControlBar.setAttribute('aria-valuemin', '0');
 
@@ -32,6 +32,8 @@ function initializeAudioPlayer(audioPlayer) {
     let volumeControlBar = audioPlayer.querySelector('.js-volumecontrolbar');
     let volumeControlBarSize = volumeControlBar.clientWidth;
     let volumeController = audioPlayer.querySelector('.js-volumecontroller');
+
+    let downloadButton = audioPlayer.getElementsByTagName('a')[0];
 
 
     playButton.addEventListener('click', function () {
@@ -93,7 +95,18 @@ function initializeAudioPlayer(audioPlayer) {
         keyDownVolumeBar.call(this, event, additionalParameter1, additionalParameter2, additionalParameter3, additionalParameter4, additionalParameter5);
     }, false);
 
+
+    //adds better usabiliy when switching controlls
+    playButton.addEventListener('focus', () => enhanceAudioTips(audioBook));
+    muteButton.addEventListener('focus', () => enhanceAudioTips(audioBook));
+    timeControlBar.addEventListener('focus', () => enhanceAudioTips(audioBook));
+    volumeControlBar.addEventListener('focus', () => enhanceAudioTips(audioBook));
+    downloadButton.addEventListener('focus', () => enhanceAudioTips(audioBook));
+
+
+
 }
+
 
 //Play or Pause current audiobook
 function playOrPause(audioBook, playButton, timeControlBar, currentTime, timeControlBarSize, progressBar) {
@@ -156,7 +169,7 @@ function update(audioBook, playButton, timeControlBar, currentTime, timeControlB
 
         //updates time control bar aria
         timeControlBar.setAttribute('aria-valuenow', parseInt(audioBook.currentTime));
-        timeControlBar.setAttribute('aria-valuetext', parseInt(audioBook.currentTime / 60).toString() + 'minutos e' + parseInt(audioBook.currentTime % 60).toString()+'segundos'+' '+'de'+' '+minutes.toString() + 'minutos e' + seconds.toString()+'segundos');
+        timeControlBar.setAttribute('aria-valuetext', parseInt(audioBook.currentTime / 60).toString() + 'minutos e' + parseInt(audioBook.currentTime % 60).toString() + 'segundos' + ' ' + 'de' + ' ' + minutes.toString() + 'minutos e' + seconds.toString() + 'segundos');
 
     } else {
         currentTime.innerHTML = "00:00";
@@ -179,6 +192,7 @@ function clickedTimeBar(event, audioBook, timeControlBar, progressBar, timeContr
         progressBar.style.width = mouseX + 'px';
     }
 }
+
 //other embed
 function keyDownTimeBar(key, audioBook) {
     let flag = false;
@@ -222,6 +236,7 @@ function keyDownTimeBar(key, audioBook) {
             key.preventDefault();
             key.stopPropagation();
         }
+        enhanceAudioTips(audioBook)
         newTime = updateTimeValue(audioBook, newTime);
     }
 }
@@ -247,13 +262,13 @@ function clickedVolumeBar(event, audioBook, muteButton, volumeControlBar, volume
         //volume 1 equals to 100%
         let newVolume = mouseX / volumeControlBarSize;
 
+        enhanceAudioTips(audioBook)
         newVolume = updateVolumeValue(audioBook, muteButton, newVolume);
         updateVolumeAria(volumeControlBar, newVolume);
         volumeController.style.width = mouseX + 'px';
 
     }
 }
-
 
 
 function keyDownVolumeBar(key, audioBook, muteButton, volumeControlBar, volumeController, volumeControlBarSize) {
@@ -299,6 +314,7 @@ function keyDownVolumeBar(key, audioBook, muteButton, volumeControlBar, volumeCo
             key.stopPropagation();
         }
         newVolume = updateVolumeValue(audioBook, muteButton, newVolume);
+        enhanceAudioTips(audioBook)
         updateVolumeAria(volumeControlBar, newVolume);
         volumeController.style.width = parseInt((newVolume * volumeControlBarSize)) + 'px';
 
@@ -340,10 +356,20 @@ function updateVolumeAria(volumeControlBar, volume) {
 }
 
 
-
-
 //adds a zero when the time is smaller than ten seconds
 function addZero(digit) {
     return digit < 10 ? ('0' + digit).toString() : digit.toString();
+}
+
+//pauses the audiobook when an audioplayers's elements is focused or activated to improve usability
+function enhanceAudioTips(audioBook) {
+    console.log('passou');
+    (!audioBook.paused && !audioBook.muted && !audioBook.ended) ? audioBook.pause() : '';
+
+//plays the audiobook after 8 seconds
+    setTimeout(function () {
+        audioBook.play();
+    }, 8000);
+
 }
 
