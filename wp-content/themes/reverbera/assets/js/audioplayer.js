@@ -97,12 +97,10 @@ function initializeAudioPlayer(audioPlayer) {
 
 
     //adds better usabiliy when switching controlls
-    playButton.addEventListener('focus', () => enhanceAudioTips(audioBook));
     muteButton.addEventListener('focus', () => enhanceAudioTips(audioBook));
     timeControlBar.addEventListener('focus', () => enhanceAudioTips(audioBook));
     volumeControlBar.addEventListener('focus', () => enhanceAudioTips(audioBook));
     downloadButton.addEventListener('focus', () => enhanceAudioTips(audioBook));
-
 
 
 }
@@ -363,13 +361,14 @@ function addZero(digit) {
 
 //pauses the audiobook when an audioplayers's elements is focused or activated to improve usability
 function enhanceAudioTips(audioBook) {
-    console.log('passou');
-    (!audioBook.paused && !audioBook.muted && !audioBook.ended) ? audioBook.pause() : '';
+    if (!audioBook.paused && !audioBook.muted && !audioBook.ended) {
+        audioBook.pause();
 
-//plays the audiobook after 8 seconds
-    setTimeout(function () {
-        audioBook.play();
-    }, 8000);
+        //plays the audiobook after 8 seconds
+        setTimeout(function () {
+            audioBook.play();
+        }, 8000);
 
+    }else return;
 }
 
