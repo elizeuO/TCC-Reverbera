@@ -10,3 +10,4 @@ wp-content/plugins/lorem-ipsum
 .idea
 .idea/workspace.xml
 .DS_Store
+.htaccess
