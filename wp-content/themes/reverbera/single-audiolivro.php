@@ -4,7 +4,8 @@
 $audiobook = get_post();
 
 //gets the author of audiobook of the single page
-$authorName = get_field('author');
+$author= get_field('author');
+
 
 //gets the audiobook file
 $attachment_id = get_field('audioFile');
@@ -56,15 +57,16 @@ foreach ($category as $term) {
                                     <?= $audiobook->post_content; ?>
                                 </p>
 
-                                <?php if ($authorName) { ?>
+                                <?php if ($author) {?>
+
                                     <p class="c__paragraph c-paragraph--info c__link c__trasition300">
-                                        <?php foreach ($authorName as $author): ?>
+
                                         <a href="<?= get_permalink($author) ?>" class="c__link">
                                             <strong>
                                                 Autor:
                                             </strong>
-                                            <?= ($author->post_title);
-                                            endforeach; ?>
+                                            <?= ($author->post_title); ?>
+
                                         </a>
                                     </p>
                                 <?php } ?>

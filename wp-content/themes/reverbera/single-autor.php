@@ -1,5 +1,6 @@
 <?php include('partials/header.php');
 $author = get_post();
+$title = $author->post_title;
 ?>
 
     <section aria-labeledby="mainTitle" class="c-section c-section--main-section">
@@ -26,7 +27,7 @@ $author = get_post();
                         </h2>
                         <div class="l-flex l-flex--center l-flex__wrap">
                             <div class="l__col-4 l__col-4--25">
-                                <img src="<?= get_the_post_thumbnail_url() ?>" alt="Foto do autor: <?= the_field('authorDescription') ?>">
+                                <img src="<?= get_the_post_thumbnail_url() ?>" alt="Foto do autor: <?= the_field('authorImageDescription') ?>">
                             </div>
 
                             <div class=" l__col-8">
@@ -45,12 +46,10 @@ $author = get_post();
                         $args = array('post_type' => 'audiolivro');
                         $query = new WP_Query($args);
                         while ($query->have_posts()) : $query->the_post();
-                            $fields = get_field('author');
-                            foreach ($fields as $field) {
-                                if ($field->post_title == $author->post_title) {
+                                if ($title == get_field('author')->post_title) {
                                     include('partials/audiobook-item.php');
                                 }
-                            }
+
                         endwhile; ?>
                     </ul>
                 </main>

@@ -8,7 +8,7 @@ $metadata = wp_get_attachment_metadata($attachment_id);
 //Gets the size of the audiobook
 $size = $metadata['filesize'];
 
-$authorName = get_field('author');
+$author= get_field('author');
 
 
 ?>
@@ -27,10 +27,7 @@ $authorName = get_field('author');
                     <span class="c__bold">
                      Autor:
                      </span>
-                    <!-- using foreach to reset the wordpress loop to display the author name-->
-                    <?php foreach ($authorName as $author):
-                        echo($author->post_title);
-                    endforeach; ?>
+                    <?= ($author->post_title); ?>
                 </div>
                 <div class="c-audiobook__info">
                   <span class="c__bold">
