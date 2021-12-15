@@ -45,11 +45,11 @@ foreach ($category as $term) {
                             <?= the_title(); ?>
                         </h2>
 
-                        <div class="l-flex l-flex--center l-flex__wrap">
-                            <div class="l__col-4 l__col-4--25">
+                        <div class="l-flex l-flex--center l-flex__wrap l-flex--center-top">
+                            <div class="l__col-4">
                                 <img src="<?= get_the_post_thumbnail_url() ?>" alt=" Capa do livro: <?= the_field('coverAlt') ?>">
                             </div>
-                            <div class="l__col-8">
+                            <div class="l__col-8 c-mobile-center">
                                 <p class="c__paragraph c-paragraph--info">
                                     <strong>
                                         Resumo:

@@ -98,6 +98,10 @@ ol {
     align-items: center;
 }
 
+.l-flex--center-top{
+    align-items: start;
+}
+
 .l-flex__wrap {
     width: 100%;
     -webkit-flex-wrap: wrap;
@@ -107,6 +111,21 @@ ol {
 
 .l-flex--stretch {
     align-items: stretch;
+}
+
+.l__col-8 {
+    width: 66%;
+    padding: 12px;
+}
+
+.l__col-6 {
+    width: 50%;
+}
+
+
+.l__col-4 {
+    width: 33.3%;
+    padding: 12px;
 }
 
 
@@ -140,7 +159,7 @@ ol {
     color: #007dc9;
 }
 
-.c__acessible-button.c__trasition-300 {
+.c__acessible-button{
     padding-right: 6px;
     padding-left: 6px;
     -webkit-transition: all 300ms ease;
@@ -148,11 +167,11 @@ ol {
     cursor: pointer;
 }
 
-.c__acessible-button.c__trasition-300.c__acessible-button--right-margin {
+.c__acessible-button--right-margin {
     margin-right: 19px;
 }
 
-.c__acessible-button.c__trasition-300.c__acessible-button--left-margin {
+.c__acessible-button--left-margin {
     margin-left: 10px;
 }
 
@@ -168,9 +187,8 @@ ol {
 .c__contrast-button {
     width: 20px;
     height: 20px;
-    border: 1px solid transparent;
+    border: 1px solid #007dc9;
     border-radius: 50%;
-    border-color: #007dc9;
     background-color: transparent;
 }
 
@@ -189,26 +207,26 @@ ol {
     color: #007dc9;
 }
 
-.c__link.c__trasition300:focus {
+.c__link:focus {
     color: #007dc9;
 }
 
-.c__link.c__trasition300.w--current {
+.c__link.w--current {
     color: #007dc9;
 }
 
-.c__link.c__trasition300.c__link-full-size {
+.c__link-full-size {
     margin-right: 0;
     padding-top: 3px;
     padding-bottom: 3px;
 }
 
-.c__link.c__link--white {
+.c__link--white {
     opacity: 0.78;
     color: #fff;
 }
 
-.c__link.c__link--white:hover {
+.c__link--white:hover {
     opacity: 1;
 }
 
@@ -234,14 +252,14 @@ ol {
     background-color: #e5e5e5;
 }
 
-.c-section.c-section--main-section {
+.c-section--main-section {
     position: relative;
     padding-top: 235px;
     padding-bottom: 120px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 29, 0.28)), to(rgba(0, 0, 29, 0.28))), url('../images/main-section-bg.jpg');
     background-image: linear-gradient(180deg, rgba(0, 0, 29, 0.28), rgba(0, 0, 29, 0.28)), url('../images/main-section-bg.jpg');
     background-position: 0 0, 100% 50%;
-    background-size: auto, auto 600px;
+    background-size: cover;
     background-repeat: repeat, no-repeat;
     background-attachment: scroll, fixed;
 }
@@ -254,7 +272,7 @@ ol {
     text-align: left;
 }
 
-.c__title.c__white-text.c-title--main-title {
+.c-title--main-title {
     margin-top: auto;
     margin-bottom: auto;
     font-size: 1.8em;
@@ -314,28 +332,28 @@ ol {
     line-height: 1.5em;
 }
 
-.c__paragraph.c__paragraph--less-margin {
+.c__paragraph--less-margin {
     margin-bottom: 20px;
 }
 
-.c__paragraph.c__paragraph--less-margin.c__paragraph--left-align {
+.c__paragraph--left-align {
     text-align: left;
 }
 
-.c__paragraph.c__paragraph--less-margin.c-paragraph--info {
+.c-paragraph--info {
     margin-bottom: 5px;
     text-align: left;
 }
 
-.c__paragraph.c__paragraph--left-align {
+.c__paragraph--left-align {
     text-align: left;
 }
 
-.c__paragraph.c-paragraph--no-margin {
+.c-paragraph--no-margin {
     margin-bottom: 0;
 }
 
-.c__paragraph.c-paragraph--info {
+.c-paragraph--info {
     display: block;
     width: auto;
     margin-bottom: 10px;
@@ -373,12 +391,6 @@ ol {
     text-decoration: none;
 }
 
-.l__col-4 {
-    width: 33.3%;
-    padding-right: 12px;
-    padding-left: 12px;
-}
-
 .c__section-title__big-title {
     font-size: 1.6em;
     text-transform: uppercase;
@@ -399,7 +411,7 @@ ol {
     line-height: 1.5em;
 }
 
-.c-audiobook__info.c__paragraph--left-align {
+.c__paragraph--left-align {
     text-align: left;
 }
 
@@ -452,7 +464,7 @@ ol {
     transform: scale(1.2);
 }
 
-.c-audio-player__button.c-audio-player__button--blue-color-no-border {
+.c-audio-player__button--blue-color-no-border {
     margin-right: 0;
     border-style: none;
     color: #007dc9;
@@ -490,7 +502,7 @@ ol {
     cursor: pointer;
 }
 
-.c-audio__control-bar.c-audio__control-bar--smaller-no-margin {
+.c-audio__control-bar--smaller-no-margin {
     width: 25%;
     margin-left: 0;
 }
@@ -515,11 +527,11 @@ ol {
     background-color: #007dc9;
 }
 
-.c-audio__controller.js-volumecontroller.c-audio__controller--full-width {
+.c-audio__controller--full-width {
     width: 100%;
 }
 
-.c-audio__controller.js-timecontroller.c-audio__controller--no-size {
+.c-audio__controller--no-size {
     width: 0;
 }
 
@@ -637,15 +649,6 @@ ol {
     transform: scale(1.1);
 }
 
-.l__col-8 {
-    width: 66%;
-    padding: 12px;
-}
-
-.l__col-6 {
-    width: 50%;
-}
-
 .c-info-content {
     margin-bottom: 40px;
 }
@@ -655,7 +658,11 @@ ol {
         position: static;
     }
 
-    .l-flex.l-flex--container {
+    .c-mobile-center, .c-mobile-center *{
+        text-align: center !important;
+    }
+
+    .l-flex--container {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
@@ -692,7 +699,7 @@ ol {
         padding-left: 15px;
     }
 
-    .c-section.c-section--main-section {
+    .c-section--main-section {
         padding-top: 78px;
         padding-bottom: 57px;
     }
@@ -710,10 +717,6 @@ ol {
         width: 50%;
     }
 
-    .l__col-4.l__col-4--25 {
-        width: 25%;
-    }
-
     .c-audio-player {
         width: 75%;
         margin-right: auto;
@@ -722,12 +725,12 @@ ol {
         padding-left: 10px;
     }
 
-    .c-audio-player.c-audio-player--left-align {
+    .c-audio-player--left-align {
         margin-right: 0;
         margin-left: 0;
     }
 
-    .c-audio__control-bar.c-audio__control-bar--smaller-no-margin.js-volumecontrolbar {
+    .c-audio__control-bar--smaller-no-margin {
         display: none;
     }
 
@@ -791,16 +794,12 @@ ol {
         width: 100%;
     }
 
-    .l__col-4.l__col-4--25 {
-        width: 50%;
-    }
-
     .c-audio-player {
         padding-right: 10px;
         padding-left: 10px;
     }
 
-    .c-audio-player.c-audio-player--left-align {
+    .c-audio-player--left-align {
         width: 70%;
         margin-right: auto;
         margin-left: auto;
@@ -837,7 +836,7 @@ ol {
         width: 75%;
     }
 
-    .c-audio-player.c-audio-player--left-align {
+    .c-audio-player--left-align {
         width: 100%;
     }
 }
