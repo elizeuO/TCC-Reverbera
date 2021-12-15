@@ -129,6 +129,22 @@ function playOrPause(audioBook, playButton, timeControlBar, currentTime, timeCon
 
         //creates a timer
         updateTime = setInterval(() => update(audioBook, playButton, timeControlBar, currentTime, timeControlBarSize, progressBar), 500);
+
+        //Pause others players
+        let otherAudioPlayers = document.querySelectorAll('.c-audio-player');
+            otherAudioPlayers.forEach((otherAudioPlayer)=>{
+                let otherAudioBook = otherAudioPlayer.querySelector('audio');
+                if(audioBook !== otherAudioBook){
+                    let button = otherAudioPlayer.querySelector('.js-playbutton');
+                    button.innerHTML = "";
+                    otherAudioBook.pause();
+                    
+                    //acessibility state
+                    playButton.setAttribute('title', 'Reproduzir audiolivro');
+                    playButton.setAttribute('aria-pressed', 'false');
+
+                }
+            });
     }
 }
 
