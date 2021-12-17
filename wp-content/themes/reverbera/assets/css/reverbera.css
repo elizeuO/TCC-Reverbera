@@ -363,7 +363,7 @@ ol {
 .c-breadcrumb {
     position: relative;
     margin-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     text-align: left;
 }
 
@@ -378,6 +378,7 @@ ol {
     margin-bottom: 20px;
     margin-left: 20px;
     padding-right: 40px;
+    padding-bottom: 20px;
     padding-left: 40px;
     border: 1px solid transparent;
     width: 70%;

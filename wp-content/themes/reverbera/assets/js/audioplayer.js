@@ -198,7 +198,7 @@ function clickedTimeBar(event, audioBook, timeControlBar, progressBar, timeContr
         //gets the position of mouse relative to the element
 
         let mouseX = event.pageX - timeControlBar.offsetLeft;
-        //calculates the time percentage based on nouse position on element
+        //calculates the time percentage based on mouse position on element
         let newTime = mouseX * audioBook.duration / timeControlBarSize;
 
 

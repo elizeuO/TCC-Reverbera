@@ -34,7 +34,7 @@ body a:hover, body a:focus {
 
 .c__paragraph, .c__title, .c-header__acessiblity-descripition,
 .c-audio-player__button.c-audio-player__button--blue-color-no-border,
-.c-breadcrumb, .c__subtitle,pre {
+.c-breadcrumb, .c__subtitle,pre, ul {
     color: white;
 }
 
