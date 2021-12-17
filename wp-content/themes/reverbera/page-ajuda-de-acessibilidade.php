@@ -24,7 +24,7 @@
                         Consortium), principal organização de padronização da Web, que desenvolve especificações
                         técnicas e
                         orientações de uso internacional.
-                        Para tal, foram implementados para garantir este acesso, tais
+                        Para tal, foram implementados para garantir este acesso, opções
                         como o alto contraste, possibilidade de aumento de fonte, teclas de atalho e navegação por
                         teclado.
                     </p>
@@ -130,7 +130,7 @@
                     </h3>
 
                     <p class="c__paragraph">
-                        Use a tecla Tab para navegar por todo o conteúdo das páginas e Shift + Tab
+                        Use a tecla Tab para navegar por todo o conteúdo operável das páginas e Shift + Tab
                         para retornar.
                     </p>
 

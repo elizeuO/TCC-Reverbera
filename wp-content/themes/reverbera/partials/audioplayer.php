@@ -1,11 +1,11 @@
-<div tabindex="0" aria-label="Player de Audiolivro" class="c-audio-player">
+<div tabindex="0" aria-label="Player de Audiolivro: <?= the_title() ?>" class="c-audio-player" role="application">
     <div class="w-embed">
         <audio>
 <!--            gets the audiofile-->
             <source src="<?=wp_get_attachment_url( $attachment_id )?>"type="audio/mpeg">
         </audio>
     </div>
-    <div class="c-audio-player__controls">
+    <div class="c-audio-player__controls" >
         <div class="l-flex l-flex--center">
             <button title="Reproduzir audiolivro" role="button"
                     aria-label="Reproduzir audiolivro"
