@@ -1,0 +1,47 @@
+body a, .c__menu-button {
+    color: yellow !important;
+}
+
+body a:hover, body a:focus {
+    color: white !important;
+}
+
+.c-header,.c-footer,.c__menu-button, .c-gategory-menu__list{
+    background: #000 !important;
+}
+
+.c-header__brand {
+    filter: brightness(0) invert(100%);
+}
+
+.c-section, .c-content-wrapper, .c-category-menu__title, .c-category-menu, .c-audio-player {
+    background: black;
+}
+
+.c-section--main-section, img {
+    filter: grayscale(1);
+}
+
+
+.c-header, .c-content-wrapper, .c-category-menu, .c-category-menu__title, .c-audio-player,
+.c-audio-player__button, .c__contrast-button,.c-list__item,.c-list__item:first-child,.c-footer,.c-gategory-menu__list  {
+    border-color: white;
+}
+
+.c-audio__controller {
+    background: white;
+}
+
+.c__paragraph, .c__title, .c-header__acessiblity-descripition,
+.c-audio-player__button.c-audio-player__button--blue-color-no-border,
+.c-breadcrumb, .c__subtitle,pre, ul {
+    color: white;
+}
+
+.c-audio__controller {
+    background: #414141;
+}
+
+.c-audiobook__title {
+    color: inherit;
+}

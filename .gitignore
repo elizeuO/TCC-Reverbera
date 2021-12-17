@@ -7,5 +7,7 @@ wp-content/uploads.rar
 wp-content/uploads.tar.gz
 wp-content/plugins/wp-lorem-ipsum
 wp-content/plugins/lorem-ipsum
-.idea/
+.idea
+.idea/workspace.xml
 .DS_Store
+.htaccess

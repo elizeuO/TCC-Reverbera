@@ -1,10 +1,10 @@
-<?php get_header(); ?>
+<?php include('partials/header.php'); ?>
 
     <section class="c-section c-section--main-section">
         <div class="c-container c__center">
             <h1 class="c__title c__white-text c-title--main-title c__center">
             <span class="c__section-title__big-title">
-                Ajuda de acessibilidade
+            <?= the_title() ?>
             </span>
             </h1>
         </div>
@@ -14,181 +14,205 @@
             <div class="l-flex l-flex--container">
                 <?php include('partials/side-menu.php') ?>
                 <main id="conteudo" accesskey="1" class="c-content-wrapper">
-                    <div class="c-breadcrumb">
-                        <div class="l-flex l-flex--center l-flex__wrap">
 
-                            <div id="breadcrumb" class="c-bread-crumb__description">
-                                Você está aqui:
-                            </div>
-                            <ol role="navigation" class="l-flex">
+                    <?php include('partials/breadcrumb.php') ?>
 
-                                <li class="c-breadcrumb__link">
-                                    <a href="index.php" class="c__link c__trasition300">
-                                        Página
-                                        Inicial
-                                    </a>
-                                </li>
-
-                                <li class="c-breadcrumb__link">
-                                    <a href="page-ajuda-de-acessibilidade.php" aria-current="page"
-                                       class="c__link c__trasition300 w--current">
-                                        Ajuda de Acessibilidade
-                                    </a>
-                                </li>
-
-                            </ol>
-                        </div>
-                    </div>
-
-                    <h2 class="c__title c__center">
-                        Inclusão
-                    </h2>
-
-                    <p class="c__paragraph c__paragraph--less-margin">
-                        O site Reverbera foi desenvolvido de forma a atender
-                        um amplo público através da implementação de recursos de acessibilidade, seguindo as
-                        recomendações
-                        do WCAG 2.0 (Web Content Accessibility Guidelines), do W3C (World Wide Web Consortium),
-                        principal
-                        organização de padronização da Web, que desenvolve especificações técnicas e orientações de uso
-                        internacional.
-                    </p>
                     <p class="c__paragraph">
-                        Com isso, pessoas com deficiência visual podem navegar no site por meio de
-                        recursos que foram implementados para garantir este acesso, tais como o alto contraste,
-                        possibilidade de aumento de fonte e navegação por teclado.
+                        O site Reverbera foi desenvolvido para atender as necessidades do público Deficiente Visual,
+                        seguindo as recomendações do WCAG 2.0 (Web Content Accessibility Guidelines), do W3C (World Wide
+                        Web
+                        Consortium), principal organização de padronização da Web, que desenvolve especificações
+                        técnicas e
+                        orientações de uso internacional.
+                        Para tal, foram implementados para garantir este acesso, opções
+                        como o alto contraste, possibilidade de aumento de fonte, teclas de atalho e navegação por
+                        teclado.
                     </p>
+
                     <h2 class="c__title c__center">
-                        Como usar:
+                        Como Usar:
                     </h2>
-                    <p class="c__paragraph c__paragraph--less-margin">Para aumentar a fonte do site clique no botão A+ e
-                        para diminuir clique em A-. Também é possível acionar a opção de Alto contraste através de seu
-                        botão
-                        localizado no cabeçalho do site, clique novamente para desativar.
+
+                    <p class="c__paragraph">
+                        Para aumentar a fonte, é só clicar no símbolo de A+ em nossa barra de acessibilidade e para
+                        diminuir
+                        clique no símbolo de A-.<br>
+                        Utilize a opção de contraste para alternar para o modo de alto contraste ou desligar.
                     </p>
-                    <p class="c__paragraph">Cada audiolivro possui um player de áudio correspondente contendo botões de
-                        play, mute, download do arquivo e controles de volume e posição da faixa reproduzida. Quando
-                        selecionados o controle de volume ou controle de posição da faixa (não disponível em celuares e
-                        tablets), utilize as
-                        <strong>
-                            teclas direcionais cima ou direita
-                        </strong>
-                        para aumentar o volume ou
-                        avançar a posição do áudio, baixo ou esquerda para diminuir o volume ou retroceder a posição do
-                        áudio, <strong>
-                            home
-                        </strong>
-                        para zerar o volume ou voltar ao início da reprodução e
-                        <strong>
-                            end
-                        </strong>
-                        para aumentar o volume ao máximo ou finalizar a reprodução do audiolivro.
-                    </p>
-                    <h2 class="c__title c__center">
-                        Teclas de atalho por navegadores
-                    </h2>
-                    <h3 class="c__subtitle">
-                        Edge e Google Chrome:
+
+                    <h3 class="c__title c__center">
+                        Teclas de atalho por navegadores:
                     </h3>
 
-                    <ul class="c-list">
-                        <li class="c-list__item">
-                            <p class="c__paragraph c-paragraph--no-margin">
-                                “Alt + 1” - ir para o conteúdo
-                            </p>
-                        </li>
-                        <li class="c-list__item">
-                            <p class="c__paragraph c-paragraph--no-margin">
-                                “Alt + 2” - ir para o menu
-                            </p>
-                        </li>
-                        <li class="c-list__item">
-                            <p class="c__paragraph c-paragraph--no-margin">
-                                “Alt + 3” – Acessar esta página de Ajuda de
-                                Acessibilidade
-                            </p>
-                        </li>
-                    </ul>
+                    <b>
+                        Microsoft Edge e Google Chrome:
+                    </b>
 
-                    <h3 class="c__subtitle">
+                    <ul>
+
+                        <li>
+                            Alt + 1 - ir para o conteúdo
+                        </li>
+
+                        <li>
+                            Alt + 2 - ir para o menu
+                        </li>
+
+                        <li>
+                            Alt + 3 - ir para a página de acessibilidade
+                        </li>
+
+                    </ul>
+                    <br>
+
+                    <b>
                         Firefox:
+                    </b>
+
+                    <ul>
+                        <li>
+                            Alt + Shift 1 - ir para o conteúdo
+                        </li>
+
+                        <li>
+                            Alt + Shift 2 - ir para o menu
+                        </li>
+
+                        <li>
+                            Alt + Shift 3 - ir para a página de acessibilidade
+                        </li>
+                    </ul>
+
+                    <br>
+
+                    <b>
+                        Opera:
+                    </b>
+
+                    <ul>
+                        <li>
+                            Shift + Escape + 1 - ir para o conteúdo
+                        </li>
+
+                        <li>
+                            Shift + Escape + 2 - ir para o menu
+                        </li>
+
+                        <li>
+                            Shift + Escape + 3 - ir para a página de acessibilidade
+                        </li>
+                    </ul>
+
+                    <br>
+
+                    <b>
+                        Safari e OmniWeb:
+                    </b>
+
+                    <ul>
+                        <li>
+                            CTRL + 1 - ir para o conteúdo
+                        </li>
+
+                        <li>
+                            CTRL + 2 - ir para o menu
+                        </li>
+
+                        <li>
+                            CTRL + 3 - ir para a página de acessibilidade
+                        </li>
+                    </ul>
+
+                    <br>
+
+                    <h3 class="c__title c__center">
+                        Navegação por tabulação
                     </h3>
-
-                    <ul class="c-list">
-                        <li class="c-list__item">
-                            <p class="c__paragraph c-paragraph--no-margin">
-                                “Alt + Shift + número”
-                            </p>
-                        </li>
-                    </ul>
-
-                    <h3 class="c__subtitle">Opera:</h3>
-                    <ul class="c-list">
-                        <li class="c-list__item">
-                            <p class="c__paragraph c-paragraph--no-margin">
-                                “Shift + Escape + número”
-                            </p>
-
-                        </li>
-
-                    </ul>
-                    <h3 class="c__subtitle">
-                        Safari:
-                    </h3>
-
-                    <ul class="c-list c-list--more-margin">
-                        <li class="c-list__item">
-                            <p class="c__paragraph c-paragraph--no-margin">
-                                “Ctrl + número”
-                            </p>
-                        </li>
-
-                    </ul>
-
-                    <h2 class="c__title c__center">
-                        NAVEGAÇÃO POR TABULAÇÃO
-                    </h2>
-                    <p class="c__paragraph c__paragraph--less-margin">
-                        Use a tecla Tab para navegar por elementos que recebem
-                        ação do usuário no site, tais como links, botões e outros na ordem em que eles são apresentados
-                        na
-                        página, e Shift + Tab para retornar. Use as setas direcionais para acessar as informações
-                        textuais.
-                    </p>
-
-                    <h2 class="c__title c__center">
-                        SUGESTÕES DE PROGRAMAS DISPONÍVEIS PARA PESSOAS COM DEFICIÊNCIA
-                    </h2>
 
                     <p class="c__paragraph">
-                        <strong>
-                            Chromevox:
-                        </strong>
-                        leitor de tela para o Google Chrome;<br>
-                        <strong>
-                            NVDA:
-                        </strong>
-                        software livre para ler tela – vários idiomas (Windows);<br>
-                        <strong>
-                            YeoSoft Text:
-                        </strong> leitor de
-                        tela em inglês e português;<br>
-                        <strong>
-                            Jaws for Windows:
-                        </strong>
-                        leitor de tela – vários idiomas;<br>
-                        <strong>
-                            Virtual Vision:
-                        </strong>
-                        leitor de telas em português do Brasil;<br>
-
-                        <strong>
-                            DOSVOX:
-                        </strong>
-                        sistema para deficientes visuais (Windows ou Linux).
+                        Use a tecla Tab para navegar por todo o conteúdo operável das páginas e Shift + Tab
+                        para retornar.
                     </p>
+
+                    <h3 class="c__title c__center">
+                        O Audioplayer
+                    </h3>
+
+                    <p class="c__paragraph">
+                        O audioplayer foi desenvolvido para que o usuário tenha controle dos recursos de áudio de forma
+                        que consiga saber o tempo atual da repodução e grau da faixa de reprodução (tais informações
+                        apresentam problemas em alguns dispositivos mobile), para facilitar o entendimento da mensagem
+                        nos leitores de tela, ao se mudar o foco de um controle para outro o áudio será pausado em
+                        alguns segundos.
+
+                    </p>
+
+                    <h4 class="c__title c__center">
+                        Controles do audioplayer
+                    </h4>
+
+                    <p class="c__paragraph">
+                        <b>Tecla Home: </b> Na barra de tempo de áudio, retorna para o início da reprodução. Na barra de
+                        volume, o reduz para 0.
+                        <br>
+                        <b>Tecla End: </b> Na barra de tempo de áudio, avança para o final da reprodução. Na barra de
+                        volume, aumenta o volume do áudio no máximo.
+                        <br>
+                        <b>Tecla direcional para cima ou para direita: </b> Na barra de tempo de áudio, avança o tempo
+                        da reprodução. Na barra de volume, aumenta o volume do áudio gradualmente.
+                        <br>
+                        <b>Tecla direcional para baixo ou para esquerda: </b> Na barra de tempo de áudio, retrocede o
+                        tempo da reprodução. Na barra de volume, diminui o volume do áudio gradualmente.
+                    </p>
+
+                    <h3 class="c__title c__center">
+                        Sugestões de leitores de tela
+                    </h3>
+
+                    <p class="c__paragraph">
+                        Leitores de tela são recomendados para usuários com deficiência visual, através desta tecnologia
+                        assistiva este público pode acessar todo o conteúdo do site de forma integral.
+                        Confira a lista de leitores de tela recomendados:
+                    </p>
+
+                    <ul>
+                        <li>
+                            <b>ChromeVox:</b> extensão de leitor de tela para o navegador Google Chrome;
+                        </li>
+
+                        <li>
+                            <b>NVDA:</b> software livre para ler tela (pago) – vários idiomas (Windows);
+                        </li>
+
+                        <li>
+                            <b>YeoSoft Text:</b> leitor de tela em inglês e português;
+                        </li>
+
+                        <li>
+                            <b>Jaws for Windows:</b> leitor de tela – vários idiomas;
+                        </li>
+
+                        <li>
+                            <b>Virtual Vision:</b> leitor de telas em português do Brasil;
+                        </li>
+
+                        <li>
+                            <b>DOSVOX</b> sistema para deficientes visuais (Windows ou Linux).
+                        <li>
+
+                        <li>
+                            <b>Orca</b> leitor de tela gratuito para Linux
+                        <li>
+
+                        <li>
+                            <b>VoiceOver</b> Leitor de tela para IOS que acompanha os dispositivos da Apple.
+                        <li>
+                    </ul>
+                    <br>
+                    Observação: leia no manual do leitor de telas sobre a melhor forma de navegação em páginas web.
+
                 </main>
             </div>
         </div>
     </section>
-<?php get_footer(); ?>
+<?php include('partials/footer.php'); ?>

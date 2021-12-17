@@ -1,5 +1,4 @@
-
-<?php get_header(); ?>
+<?php include('partials/header.php'); ?>
 
     <section aria-labeledby="mainTitle" class="c-section c-section--main-section">
         <div class="c-container c__center">
@@ -19,20 +18,7 @@
                 <?php include('partials/side-menu.php') ?>
                 <main id="conteudo" accesskey="1" class="c-content-wrapper">
 
-                    <div class="c-breadcrumb">
-                        <div class="l-flex l-flex--center">
-                            <div id="breadcrumb" class="c-bread-crumb__description">
-                                Você está aqui:
-                            </div>
-                            <ol role="navigation" class="l-flex">
-                                <li class="c-breadcrumb__link">
-                                    <a href="#" aria-current="page" class="c__link c__trasition300">
-                                        Página inicial
-                                    </a>
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
+                    <?php include('partials/breadcrumb.php') ?>
 
                     <h2 class="c__title c__center">
                         Nossa missão
@@ -46,18 +32,19 @@
                     <h2 class="c__title c__center">
                         Últimos lançamentos
                     </h2>
-                    <ul class="l-flex l-flex--center l-flex__wrap">
+                    <ul class="l-flex l-flex--center l-flex--stretch l-flex__wrap">
+
                         <?php
-                        include('partials/audiobook-item.php');
-                        include('partials/audiobook-item.php');
-                        include('partials/audiobook-item.php');
-                        include('partials/audiobook-item.php');
-                        include('partials/audiobook-item.php');
-                        include('partials/audiobook-item.php');
-                        ?>
+                        //Selects the 6 lasts audiobooks in the database and shows then
+                        $args = array('post_type' => 'audiolivro', 'posts_per_page' => 6);
+                        $query = new WP_Query($args);
+                        while ($query->have_posts()) : $query->the_post();
+                            include('partials/audiobook-item.php');
+                        endwhile; ?>
+
                     </ul>
                 </main>
             </div>
         </div>
     </section>
-<?php get_footer(); ?>
+<?php include('partials/footer.php'); ?>
