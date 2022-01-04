@@ -3,8 +3,22 @@
 <head>
     <meta lang="pt-br">
     <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-    <title>
+<!--    Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="<?= get_template_directory_uri(); ?>/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="<?= get_template_directory_uri(); ?>/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="<?= get_template_directory_uri(); ?>/assets/simages/favicon-16x16.png">
+    <link rel="manifest" href="<?= get_template_directory_uri(); ?>/assets/images/site.webmanifest">
+    <link rel="mask-icon" href="<?= get_template_directory_uri(); ?>/assets/images/safari-pinned-tab.svg"
+          color="#5bbad5">
+
+    <title>Reverbera - Áudiolivros Gratuitos</title>
         <?php
         if (is_home()) {
             echo "Reverbera - Áudiolivros Gratuitos";
@@ -15,21 +29,10 @@
         }
         ?>
     </title>
-
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link rel="apple-touch-icon" sizes="180x180"
-          href="<?= get_template_directory_uri(); ?>/assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32"
-          href="<?= get_template_directory_uri(); ?>/assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16"
-          href="<?= get_template_directory_uri(); ?>/assets/simages/favicon-16x16.png">
-    <link rel="manifest" href="<?= get_template_directory_uri(); ?>/assets/images/site.webmanifest">
-    <link rel="mask-icon" href="<?= get_template_directory_uri(); ?>/assets/images/safari-pinned-tab.svg"
-          color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <?php wp_head(); ?>
 </head>
+
+    <?php wp_head(); ?>
+
 <body class="body">
 <header id="menu" tabindex="0" accesskey="2" class="c-header">
 
