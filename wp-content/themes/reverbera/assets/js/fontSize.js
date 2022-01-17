@@ -1,6 +1,3 @@
-document.getElementById('increaseSize').setAttribute('onClick', 'increaseFontSize()');
-document.getElementById('decreaseSize').setAttribute('onClick', 'decreaseFontSize()');
-
 const increaseSizeButton = '#increaseSize';
 const decreaseSizeButton = '#decreaseSize';
 
