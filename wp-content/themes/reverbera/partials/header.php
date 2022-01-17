@@ -68,14 +68,14 @@
                 </li>
 
                 <li>
-                    <a id="increaseSize" title="Aumentar tamanho da fonte" aria-label="Aumentar fonte" role="button"
+                    <a tabindex="0" id="increaseSize" title="Aumentar tamanho da fonte" aria-label="Aumentar fonte" role="button"
                        class="c__acessible-button c__trasition-300 c__acessible-button--left-margin w-button">
                         A+
                     </a>
                 </li>
 
                 <li>
-                    <a id="decreaseSize" title="Diminuir tamanho da fonte" aria-label="Diminuir fonte" role="button"
+                    <a tabindex="0" id="decreaseSize" title="Diminuir tamanho da fonte" aria-label="Diminuir fonte" role="button"
                         class="c__acessible-button c__trasition-300 c__acessible-button--right-margin w-button">
                         A-
                     </a>
