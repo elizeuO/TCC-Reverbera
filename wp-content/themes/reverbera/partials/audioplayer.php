@@ -2,7 +2,7 @@
     <div class="w-embed">
         <audio>
 <!--            gets the audiofile-->
-            <source src="<?=wp_get_attachment_url( $attachment_id )?>"type="audio   /mpeg">
+            <source src="<?=wp_get_attachment_url( $attachment_id )?>"type="audio/mpeg">
         </audio>
     </div>
     <div class="c-audio-player__controls" >
