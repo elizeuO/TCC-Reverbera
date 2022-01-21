@@ -20,7 +20,7 @@
             <div class="c-audio__control-bar c-audio__control-bar--smaller-no-margin js-volumecontrolbar"
                  aria-valuemin="0" aria-valuenow="100" aria-value-text="volume 100%"
                  aria-label="Controle de volume" role="slider" aria-valuemax="100"
-                 id="volumeControlBar" tabindex="0">
+                 tabindex="0">
                 <div class="c-audio__controller js-volumecontroller"></div>
             </div>
             <a href="<?=wp_get_attachment_url( $attachment_id )?>" title="Fazer download do audiolivro" aria-label="Fazer download do audiolivro"
