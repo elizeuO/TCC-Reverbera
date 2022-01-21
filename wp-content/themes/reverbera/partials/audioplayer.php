@@ -2,12 +2,12 @@
     <div class="w-embed">
         <audio>
 <!--            gets the audiofile-->
-            <source src="<?=wp_get_attachment_url( $attachment_id )?>"type="audio/mpeg">
+            <source src="<?=wp_get_attachment_url( $attachment_id )?>"type="audio   /mpeg">
         </audio>
     </div>
     <div class="c-audio-player__controls" >
         <div class="l-flex l-flex--center">
-            <button title="Reproduzir audiolivro" role="button"
+            <button title="Reproduzir audiolivro"
                     aria-label="Reproduzir audiolivro"
                     aria-pressed="false" class="c-audio-player__button c__trasition300 js-playbutton w-button">
                 <span aria-hidden="true"></span>
