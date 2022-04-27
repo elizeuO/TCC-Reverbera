@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html data-wf-page="5d7e40af17c02c404ddccfbb" data-wf-site="5d7e40af17c02c53c2dccfba">
+<html>
 <head>
     <meta lang="pt-br">
     <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-    <title>
+<!--    Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="<?= get_template_directory_uri(); ?>/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="<?= get_template_directory_uri(); ?>/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="<?= get_template_directory_uri(); ?>/assets/simages/favicon-16x16.png">
+    <link rel="manifest" href="<?= get_template_directory_uri(); ?>/assets/images/site.webmanifest">
+    <link rel="mask-icon" href="<?= get_template_directory_uri(); ?>/assets/images/safari-pinned-tab.svg"
+          color="#5bbad5">
+
+    <title>Reverbera - Áudiolivros Gratuitos</title>
         <?php
         if (is_home()) {
             echo "Reverbera - Áudiolivros Gratuitos";
@@ -15,21 +29,10 @@
         }
         ?>
     </title>
-
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link rel="apple-touch-icon" sizes="180x180"
-          href="<?= get_template_directory_uri(); ?>/assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32"
-          href="<?= get_template_directory_uri(); ?>/assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16"
-          href="<?= get_template_directory_uri(); ?>/assets/simages/favicon-16x16.png">
-    <link rel="manifest" href="<?= get_template_directory_uri(); ?>/assets/images/site.webmanifest">
-    <link rel="mask-icon" href="<?= get_template_directory_uri(); ?>/assets/images/safari-pinned-tab.svg"
-          color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <?php wp_head(); ?>
 </head>
+
+    <?php wp_head(); ?>
+
 <body class="body">
 <header id="menu" tabindex="0" accesskey="2" class="c-header">
 
@@ -65,15 +68,15 @@
                 </li>
 
                 <li>
-                    <a id="increaseSize" title="Aumentar tamanho da fonte" aria-label="Aumentar fonte" role="button"
-                       href="#" class="c__acessible-button c__trasition-300 c__acessible-button--left-margin w-button">
+                    <a tabindex="0" id="increaseSize" title="Aumentar tamanho da fonte" aria-label="Aumentar fonte" role="button"
+                       class="c__acessible-button c__trasition-300 c__acessible-button--left-margin w-button">
                         A+
                     </a>
                 </li>
 
                 <li>
-                    <a id="decreaseSize" title="Diminuir tamanho da fonte" aria-label="Diminuir fonte" role="button"
-                       href="#" class="c__acessible-button c__trasition-300 c__acessible-button--right-margin w-button">
+                    <a tabindex="0" id="decreaseSize" title="Diminuir tamanho da fonte" aria-label="Diminuir fonte" role="button"
+                        class="c__acessible-button c__trasition-300 c__acessible-button--right-margin w-button">
                         A-
                     </a>
 

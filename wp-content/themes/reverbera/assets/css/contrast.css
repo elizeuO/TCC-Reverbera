@@ -15,33 +15,33 @@ body a:hover, body a:focus {
 }
 
 .c-section, .c-content-wrapper, .c-category-menu__title, .c-category-menu, .c-audio-player {
-    background: black;
+    background: black !important;
 }
 
 .c-section--main-section, img {
-    filter: grayscale(1);
+    filter: grayscale(1) !important;
 }
 
 
 .c-header, .c-content-wrapper, .c-category-menu, .c-category-menu__title, .c-audio-player,
 .c-audio-player__button, .c__contrast-button,.c-list__item,.c-list__item:first-child,.c-footer,.c-gategory-menu__list  {
-    border-color: white;
+    border-color: white !important;
 }
 
 .c-audio__controller {
-    background: white;
+    background: white !important;
 }
 
 .c__paragraph, .c__title, .c-header__acessiblity-descripition,
 .c-audio-player__button.c-audio-player__button--blue-color-no-border,
 .c-breadcrumb, .c__subtitle,pre, ul {
-    color: white;
+    color: white !important;
 }
 
 .c-audio__controller {
-    background: #414141;
+    background: #414141 !important;
 }
 
 .c-audiobook__title {
-    color: inherit;
+    color: inherit !important;
 }
