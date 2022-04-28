@@ -120,8 +120,6 @@ function playOrPause(audioBook, playButton, timeControlBar, currentTime, timeCon
         //stops timer
         window.clearInterval(updateTime);
     } else {
-        console.log('passou')
-        console.log(playButton)
         audioBook.play();
         playButton.innerHTML = "";
 
